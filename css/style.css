@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Readex Pro", sans-serif;
+    background-color: #faf0dd;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+    color: #333333;
+}
+.navbar-nav.me-auto{
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+.space-left-right{
+    padding: 0px 50px;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 15px 30px;
+}
+.spaceleft-right{
+    padding: 0px 60px;
+}
+.header-buttons ul{
+    margin: 0px;
+    padding: 0px;
+}
+.header-buttons ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 5px;
+}
+.header-buttons ul li a{
+    text-decoration: none;
+}
+.header-buttons ul li a span{
+    background-color: #FFA028;
+}
+.header-buttons ul li a i{
+    font-weight: 700;
+}
+.header-buttons ul li a span{
+    background-color: #FFA028;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px;
+    line-height: 12px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    position: relative;
+    left: -7px;
+    top: -7px;
+}
+header .navbar .container{
+    background-color: #ffffff;
+    border-radius: 100px;
+    margin-top: 0px;
+}
+.banner-content h1{
+    font-family: "Fredoka", sans-serif;
+    font-size: 60px;
+    color: #1D256B;
+    font-weight: 600;
+}
+.First-fold-section{
+    background-image: url("../images/blog-line.png");
+    background-repeat: no-repeat;
+}
+.banner-content{
+    padding: 40px 0px;
+    position: relative;
+}
+.banner-content:before{
+    content: "";
+    background-image: url("../images/cir.png");
+    width: 61px;
+    height: 61px;
+    background-size: contain;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+}
+.banner-content:after{
+    content: "";
+    background-image: url("../images/hex.png");
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    position: absolute;
+    bottom: 40px;
+    right: -50px;
+}
+.banner-content h1 img{
+    margin-top: -25px;
+}
+.banner-content p{
+    font-size: 16px;
+    color: #585858;
+    margin: 30px 0px;
+    line-height: 30px;
+}
+.list-style ul{
+    margin: 0px;
+    padding: 0px;
+}
+.list-style ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000033;
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+.clear-both{
+    clear: both;
+}
+.list-style ul li i{
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    margin-right: 15px;
+}
+.btn.btn-style{
+    background-color: #1D256B;
+    color: #ffffff;
+    width: 146px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 30px;
+    line-height: 20px;
+}
+.btn.btn-style:hover{
+    background-color: #ED6436;
+}
+.banner-content .list-style{
+    margin-bottom: 30px;
+}
+.pet-addicts{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 20px;
+}
+.pet-addicts img{
+    margin-right: 5px;
+}
+.black-color-strip{
+    background-color: #232121;
+}
+.black-color-strip li{
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 12px;
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+.black-color-strip li i{
+    margin-right: 2px;
+}
+.black-color-strip{
+    background-color: #232121;
+    padding: 8px 0px;
+}
+.black-color-strip ul{
+    margin: 0px;
+}
+.navbar{
+    margin-top: 30px;
+}
+.second-fold-section{
+    padding: 0px 0px 80px;
+    background-image: url("../images/paw-bg.png");
+    margin-top: 80px;
+}
+.feature-products{
+    position: relative;
+}
+.feature-products h5{
+    font-size: 40px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    position: absolute;
+}
+.feature-products.accessories h5{
+    bottom: 10px;
+    right: 20px;
+}
+.feature-products.pet-suppliments h5{
+    position: static;
+}
+.pet-suppliment-text {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    top: 0px;
+}
+.pet-suppliment-text .btn.btn-style{
+    background-color: #ED6436;
+}
+.pet-suppliment-text .btn.btn-style:hover{
+    background-color: #1D256B;
+}
+.section-title i{
+    display: block;
+    margin-bottom: 5px;
+    margin-bottom: 20px;
+}
+.section-title p{
+    font-size: 12px;
+    color: #1D256B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.section-title h3{
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.shop-by-pet{
+    padding: 100px 0px 0px;
+}
+.pet-round-img h6 {
+    color: #000000;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+.shop-by-pet .section-title{
+    margin-bottom: 60px;
+}
+@media only screen and (min-width: 1920px) {
+    .container-fluid {
+        width: 1720px;
+    }
+}
