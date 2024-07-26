@@ -179,7 +179,7 @@ header .navbar .container{
     margin-top: 30px;
 }
 .second-fold-section{
-    padding: 0px 0px 80px;
+    padding: 0px 0px 100px;
     background-image: url("../images/paw-bg.png");
     margin-top: 80px;
 }
@@ -243,6 +243,130 @@ header .navbar .container{
 }
 .shop-by-pet .section-title{
     margin-bottom: 60px;
+}
+.dog-link{
+    position: relative;
+}
+.dog-link:before{
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-image: url("../images/dogshape.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+.animal-food{
+    margin-top: 80px;
+}
+.animal-food-col{
+    width: 100%;
+    padding: 20px;
+    border-radius: 27px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.food-image {
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+.animal-food h6{
+    font-family: "Fredoka", sans-serif;
+    color: #000000;
+    font-size: 20px;
+    line-height:20px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+.animal-food-col{
+    position: relative;
+}
+.like-image{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+}
+.view-all-button{
+    margin-top: 60px;
+}
+.early-bird-titles{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.early-bird-titles h4{
+    font-size: 40px;
+    font-family: "Fredoka", sans-serif;
+    color: #1D256B;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.early-bird-titles p{
+    font-size: 20px;
+    color: #1D256B;
+    line-height: 20px;
+    margin-bottom: 0px;
+}   
+#countdown ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#countdown ul li{
+    list-style: none;
+    text-align: center;
+    width: 133px;
+    height: 133px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 30px #7c7c7c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#countdown ul li span{
+    display: block;
+}
+#countdown ul li span{
+    font-family: "Fredoka", sans-serif;
+    color: #1D256B;
+    font-weight: 700;
+    font-size: 40px;
+}
+.ctvalue{
+    font-family: "Fredoka", sans-serif;
+    color: #1D256B;
+    font-weight: 700;
+    font-size: 30px;
+}
+.exclusive-early-bird{
+    background-color: #ffe9c9;
+}
+.early-bird-text{
+    padding: 100px 0px 130px;
+}
+.early-bird{
+    margin-top: -50px;
+}
+.new-arrivals-section{
+    background-color: #ffffff;
+    position: relative;
+    padding: 100px 0px;
+}
+.new-arrivals-section:before{
+    content: "";
+    background-image: url("../images/layers.png");
+    width: 100%;
+    position: absolute;
+    top: -45px;
+    padding-top: 46px;
 }
 @media only screen and (min-width: 1920px) {
     .container-fluid {

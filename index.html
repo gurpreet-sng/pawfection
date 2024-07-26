@@ -145,7 +145,7 @@
                             <h3>Shop By Pet</h3>
                         </div>
                         <div class="col-lg-2 col-md-4 col-2">
-                            <div class="pet-round-img text-center">
+                            <div class="pet-round-img text-center dog-link">
                                 <img src="images/dogs.png" alt="dogs" class="img-fluid">
                                 <h6>Dogs</h6>
                             </div>
@@ -182,10 +182,117 @@
                         </div>
                     </div>
                 </div>
+                <div class="animal-food">
+                    <div class="row">
+                        <div class="col">
+                            <div class="animal-food-col">
+                                <div class="food-image">
+                                    <img src="images/dog-food.png" class="img-fluid">
+                                </div>
+                                <div class="like-image"><img src="images/like.png" class="img-fluid"></div>
+                            </div>
+                            <h6>Chicken Dry Food</h6>
+                        </div>
+                        <div class="col">
+                            <div class="animal-food-col">
+                                <div class="food-image">
+                                    <img src="images/chicken-flavor-biscuit.png" class="img-fluid">
+                                </div>
+                                <div class="like-image"><img src="images/like.png" class="img-fluid"></div>
+                            </div>
+                            <h6>Chicken Flavor Biscuit</h6>
+                        </div>
+                        <div class="col">
+                            <div class="animal-food-col">
+                                <div class="food-image">
+                                    <img src="images/canine-bone-meals.png" class="img-fluid">
+                                </div>
+                                <div class="like-image"><img src="images/like.png" class="img-fluid"></div>
+                            </div>
+                            <h6>Canine Bone Meals</h6>
+                        </div>
+                        <div class="col">
+                            <div class="animal-food-col">
+                                <div class="food-image">
+                                    <img src="images/tuna-flavor-dog-food.png" class="img-fluid">
+                                </div>
+                                <div class="like-image"><img src="images/like.png" class="img-fluid"></div>
+                            </div>
+                            <h6>Tuna Flavor Dog Food</h6>
+                        </div>
+                        <div class="col">
+                            <div class="animal-food-col">
+                                <div class="food-image">
+                                    <img src="images/chicken-flavor-chunks.png" class="img-fluid">
+                                </div>
+                                <div class="like-image"><img src="images/like.png" class="img-fluid"></div>
+                            </div>
+                            <h6>Chicken Flavor Chunks</h6>
+                        </div>
+                    </div>
+                    <div class="text-center view-all-button"><a class="btn btn-style" href="#" role="button">View All</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exclusive-early-bird">
+        <div class="spaceleft-right">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="early-bird-text">
+                            <div class="early-bird-titles">
+                                <h4>Exclusive Early Bird <br>
+                                    Offer: 20% Off</h4>
+                                <p>Hurry up! Deals end up :</p>
+                            </div>
+                            <div>
+                                <div id="countdown">
+                                    <ul>
+                                        <li><span id="days"></span><div class="ctvalue">Days</div></li>
+                                        <li><span id="hours"></span><div class="ctvalue">Hrs</div></li>
+                                        <li><span id="minutes"></span><div class="ctvalue">Mins</div></li>
+                                        <li><span id="seconds"></span><div class="ctvalue">Secs</div></li>
+                                    </ul>
+                                </div>
+                                <div class="text-center view-all-button"><a class="btn btn-style" href="#" role="button">Shop Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="early-bird">
+                            <img src="images/early-bird.png" class="img-fluid">
+                       </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
+    <section class="new-arrivals-section">
+        <div class="spaceleft-right">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <i><img src="images/paw-big.png" alt="animal feet"></i>
+                        <p>Popular Picks</p>
+                        <h3>New Arrivals</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-lg-6">
+                        <div class="product-box">
+                            <div class="product-image">
+                                <img src="" class="img-fluid">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     
 
@@ -205,6 +312,51 @@
             integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
             crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            (function () {
+                const second = 1000,
+                        minute = second * 60,
+                        hour = minute * 60,
+                        day = hour * 24;
+
+                //I'm adding this section so I don't have to keep updating this pen every year :-)
+                //remove this if you don't need it
+                let today = new Date(),
+                    dd = String(today.getDate()).padStart(2, "0"),
+                    mm = String(today.getMonth() + 1).padStart(2, "0"),
+                    yyyy = today.getFullYear(),
+                    nextYear = yyyy + 1,
+                    dayMonth = "09/30/",
+                    birthday = dayMonth + yyyy;
+                
+                today = mm + "/" + dd + "/" + yyyy;
+                if (today > birthday) {
+                    birthday = dayMonth + nextYear;
+                }
+                //end
+                
+                const countDown = new Date(birthday).getTime(),
+                    x = setInterval(function() {    
+
+                        const now = new Date().getTime(),
+                            distance = countDown - now;
+
+                        document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                        //do something later when date is reached
+                        if (distance < 0) {
+                        document.getElementById("headline").innerText = "It's my birthday!";
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                        clearInterval(x);
+                        }
+                        //seconds
+                    }, 0)
+                }());
+        </script>
     </footer>
 </body>
 
