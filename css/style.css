@@ -368,6 +368,28 @@ header .navbar .container{
     top: -45px;
     padding-top: 46px;
 }
+.product-image{
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #dddddd;
+    margin-bottom: 30px;
+}
+.product-box{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.product-box h6{
+    color: #1D256B;
+    font-size: 22px;
+    font-weight: 700;
+}
+.product-box p{
+    color: #1D256B;
+    font-size: 16px;
+}
+.new-arrivals-section .section-title{
+    margin-bottom: 60px;
+}
 @media only screen and (min-width: 1920px) {
     .container-fluid {
         width: 1720px;
