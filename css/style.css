@@ -7,6 +7,9 @@ body{
 .navbar-expand-md .navbar-nav .nav-link{
     color: #333333;
 }
+.space-top-bottom-100{
+    padding: 100px 0px;
+}
 .navbar-nav.me-auto{
     margin-left: auto!important;
     margin-right: auto!important;
@@ -223,11 +226,18 @@ header .navbar .container{
     letter-spacing: 2px;
     font-weight: 700;
 }
+.section-title .ptag{
+    color: #585858;
+    font-size: 16px;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    font-weight: 400;
+}
 .section-title h3{
     font-family: "Fredoka", sans-serif;
     font-size: 40px;
     line-height: 42px;
-    color: #000000;
+    color: #1D256B;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -390,7 +400,92 @@ header .navbar .container{
 .new-arrivals-section .section-title{
     margin-bottom: 60px;
 }
-@media only screen and (min-width: 1920px) {
+.complete-pet-care-tabs{
+    margin-top: 100px;
+}
+.complete-pet-care-tabs .nav-link{
+    color: #1D256B;
+    font-size: 24px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0px;
+    text-align: left;
+    padding: 30px 0px 30px 45px;
+    position: relative;
+}
+.complete-pet-care-tabs .nav-link.active{
+    background-color: transparent;
+    color: #1D256B;
+    position: relative;
+}
+.complete-pet-care-tabs .nav-link.active:after{
+    content: "";
+    background-image: url("../images/arr-right.png");
+    width: 26px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.complete-pet-care-tabs .nav-link:before{
+    content: "";
+    width: 28px;
+    height: 29px;
+    background-image: url("../images/dot.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.animal-box{
+    background-color: #f4e1d3;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px dashed #92b2b4;
+    width: 320px;
+}
+.animal-box h4{
+    color: #1D256B;
+    font-size: 22px;
+    font-weight: 500;
+}
+.animal-box p{
+    margin-bottom: 0px;
+}
+.animal-box-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.complete-pet-care-tabs .tab-content{
+    padding-left: 50px;
+    margin-top: -350px;
+}
+.animal-image{
+    margin-left: -50px;
+}
+.animal-box-wrapper.skyblue .animal-box{
+    background-color: #d0f9ff;
+}
+.catimage{
+    margin-right: 20px;
+}
+.nav-link:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.complete-pet-care-solutions{
+    padding: 100px 0px 60px;
+}
+@media only screen and (min-width: 1920px){
+
     .container-fluid {
         width: 1720px;
     }
