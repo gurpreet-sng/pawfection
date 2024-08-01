@@ -560,6 +560,86 @@ header .navbar .container{
 .review-slider .owl-carousel .owl-nav{
     margin-top: 50px;
 }
+.pet-news-section{
+    background-color: #ffffff;
+}
+.pet-news-section{
+    position: relative;
+}
+.pet-news-section:before{
+    content: "";
+    background-image: url(../images/layers.png);
+    width: 100%;
+    position: absolute;
+    top: -44px;
+    padding-top: 46px;
+}
+.post-thumbnail-image{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.pet-news-section .section-title{
+    margin-bottom: 50px;
+}
+.post-thumbnail-wrapper{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #dddddd;
+}
+.post-thumbnail-text{
+    padding: 30px;
+}
+.post-thumbnail-text span{
+    font-size: 14px;
+    color: #1D256B;
+}
+.post-thumbnail-text h4{
+    color: #1D256B;
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 12px 0px;
+}
+.post-thumbnail-text a{
+    margin-top: 10px;
+}
+.ft-des{
+    display: flex;
+    position: relative;
+}
+.ft-des:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 120px;
+    background-color: #c9c8c8;
+    right: -10px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.ft-des.no-border:before{
+    display: none;
+}
+.ft-des i{
+    flex-shrink: 0;
+}
+.ft-des-text h5{
+    color: #1D256B;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+.ft-des-text p{
+    color: #585858;
+    margin-bottom: 0px;
+}
+.ft-des-text{
+    margin-left: 15px;
+}
+.footer-top{
+    background-color: #ffe1b5;
+    padding: 40px 0px;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
