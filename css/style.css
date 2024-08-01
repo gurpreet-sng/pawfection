@@ -484,9 +484,46 @@ header .navbar .container{
 .complete-pet-care-solutions{
     padding: 100px 0px 60px;
 }
+.trusted-brands-box h3{
+    color: #1D256B;
+    text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.trusted-brands-box{
+    padding: 100px 20px;
+}
+.light-cream{
+    background-color: #fffbe5;
+}
+.trusted-brands-box hr {
+    color: #878787;
+    margin: 60px 0px;
+}
+.dark-cream{
+    background-color: #ffedb9;
+    background-image: url("../images/girl-with-dog.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.supported-by{
+    padding: 100px 20px;
+}
+.dog-grooming img{
+    width: 100%;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
         width: 1720px;
     }
 }
+@media only screen and (max-width: 1400px){
+
+    .dark-cream{
+        background-size: 300px;
+    }
+}   
