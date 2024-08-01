@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -475,6 +475,50 @@
                             <h3>Supported By 20k+ <br>
                                 Individuals</h3>
                         </div>
+                        <div class="review-slider">
+                            <div class="owl-one owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="client-review">
+                                        <i><img src="images/quotes.png" class="img-fluid"></i>
+                                        <p>Lectus mauris ultrices eros in cursus turpis. Et
+                                            tortor consequat id porta nibh venenatis cras
+                                            sed felis. Rhoncus mattis rhoncus urna neque
+                                            viverra justo nec ultrices.</p>
+                                        <h6>Jessica - Teacher</h6>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="client-review">
+                                        <i><img src="images/quotes.png" class="img-fluid"></i>
+                                        <p>Lectus mauris ultrices eros in cursus turpis. Et
+                                            tortor consequat id porta nibh venenatis cras
+                                            sed felis. Rhoncus mattis rhoncus urna neque
+                                            viverra justo nec ultrices.</p>
+                                        <h6>Jessica - Teacher</h6>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="client-review">
+                                        <i><img src="images/quotes.png" class="img-fluid"></i>
+                                        <p>Lectus mauris ultrices eros in cursus turpis. Et
+                                            tortor consequat id porta nibh venenatis cras
+                                            sed felis. Rhoncus mattis rhoncus urna neque
+                                            viverra justo nec ultrices.</p>
+                                        <h6>Jessica - Teacher</h6>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="client-review">
+                                        <i><img src="images/quotes.png" class="img-fluid"></i>
+                                        <p>Lectus mauris ultrices eros in cursus turpis. Et
+                                            tortor consequat id porta nibh venenatis cras
+                                            sed felis. Rhoncus mattis rhoncus urna neque
+                                            viverra justo nec ultrices.</p>
+                                        <h6>Jessica - Teacher</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -495,6 +539,28 @@
             integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
             crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $('.owl-one').owlCarousel({
+                    items:1,
+                    loop:true,
+                    margin:10,
+                    nav:true,
+                    autoplay:false,
+                    autoplayTimeout:2000,
+                    autoplayHoverPause:true
+                });
+                
+                $('.play').on('click',function(){
+                    owl.trigger('play.owl.autoplay',[1000])
+                })
+                $('.stop').on('click',function(){
+                    owl.trigger('stop.owl.autoplay')
+                })
+            
+              });
+        </script>
         <script>
             (function () {
                 const second = 1000,

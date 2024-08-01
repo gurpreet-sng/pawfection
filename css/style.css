@@ -515,6 +515,51 @@ header .navbar .container{
 .dog-grooming img{
     width: 100%;
 }
+.client-review{
+
+}
+.client-review i{
+    display: block;
+    width: 80px;
+    height: 67px;
+}
+.review-slider{
+    margin-right: 55%;
+    margin-top: 60px;
+}
+.client-review i{
+    margin-bottom: 20px;
+}
+.client-review p {
+    line-height: 30px;
+}
+.client-review h6{
+    color: #1D256B;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.review-slider .owl-carousel .owl-nav button.owl-prev span, .review-slider .owl-carousel .owl-nav button.owl-next span{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    font-size: 0px;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+}
+.review-slider .owl-carousel .owl-nav button.owl-prev span{
+    background-image: url("../images/arr-left.png");
+}
+.review-slider .owl-carousel .owl-nav button.owl-next span{
+    background-image: url("../images/arrow-right.png");
+}
+.review-slider .owl-carousel .owl-dots{
+    display: none;
+}
+.review-slider .owl-carousel .owl-nav{
+    margin-top: 50px;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
@@ -525,5 +570,8 @@ header .navbar .container{
 
     .dark-cream{
         background-size: 300px;
+    }
+    .review-slider {
+        margin-right: 45%;
     }
 }   
