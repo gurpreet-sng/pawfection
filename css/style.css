@@ -4,11 +4,11 @@ body{
     font-family: "Readex Pro", sans-serif;
     background-color: #faf0dd;
 }
-.navbar-expand-md .navbar-nav .nav-link{
-    color: #333333;
-}
 .space-top-bottom-100{
     padding: 100px 0px;
+}
+.header-buttons.header-buttons-mobile{
+    display: none;
 }
 .navbar-nav.me-auto{
     margin-left: auto!important;
@@ -23,6 +23,8 @@ body{
     font-style: normal;
     font-weight: 600;
     padding: 15px 30px;
+    color: #333333;
+    text-align: center;
 }
 .spaceleft-right{
     padding: 0px 60px;
@@ -640,6 +642,155 @@ header .navbar .container{
     background-color: #ffe1b5;
     padding: 40px 0px;
 }
+.footer-bottom{
+    background-color: #232121;
+    padding: 100px 0px 0px;
+}
+.footer-logo{
+    margin-bottom: 20px;
+}
+.footer-logo-box p{
+    color: #EFEEE8;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.social-icons ul{
+    margin: 0px;
+    padding: 0px;
+}
+.social-icons ul li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 38px;
+    height: 38px;
+    border-radius: 100px;
+    margin: 0px 2px;
+}
+.social-icons ul li a{
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    padding: 7px;
+    display: inline-block;
+    width: 100%;
+}
+.social-icons ul li a i{
+    display: block;
+}
+.footer-links-wrapper ul{
+    margin: 0px;
+    padding: 0px;
+}
+.footer-links-wrapper ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.footer-links-wrapper ul li:before{
+    content: "";
+    width: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    height: 12px;
+    right: 0px;
+    top: 6px;
+}
+.footer-links-wrapper ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0px 12px;
+}
+.footer-links-wrapper h4{
+    color: #ffffff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    flex-shrink: 0;
+    width: 200px;
+}
+.footer-links-wrapper{
+    border-bottom: 1px solid #444242;
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+}
+.footer-links-wrapper ul li:last-child:before{
+    display: none;
+}
+.footer-links-wrapper h4{
+    margin-bottom: 0px;
+}
+.footer-news-letter h4{
+    color: #ffffff;
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+.footer-date p{
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+.footer-date i{
+    display: inline-block;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.footer-date{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.footer-news-letter .form-control{
+    height: 54px;
+    border-radius: 50px;
+    border: 0px;
+    padding: 0px 20px;
+    background-image: url("../images/plain.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.footer-cards-list ul{
+    margin: 0px;
+    padding: 0px;
+}
+.footer-cards-list ul li{
+    list-style: none;
+    margin: 0px 0px;
+    display: inline-block;
+}
+.footer-cards-list ul li a{
+    text-decoration: none;
+    display: inline-block;
+}
+.footer-cards-list{
+    text-align: right;
+}
+.copyright-section p{
+    color: #EFEEE8;
+    margin: 0px;
+}
+.copyright-section .row{
+    padding: 20px 0px;
+    margin-top: 40px;
+}
+.footer-links-box{
+    margin: 0px 40px;
+}
+.footer-links-wrapper.padding-top-zero{
+    padding-top: 0px;
+}
+.footer-links-wrapper.no-border{
+    border: 0px;
+}
+.post-thumbnail-image img{
+    width: 100%;
+}
+
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
@@ -655,3 +806,314 @@ header .navbar .container{
         margin-right: 45%;
     }
 }   
+@media only screen and (max-width:1199px){
+
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding: 15px 20px;
+    }
+    .navbar-brand{
+        width: 280px;
+    }
+    .banner-content h1{
+        font-size: 50px;
+    }
+    .feature-products h5 {
+        font-size: 30px;
+    }
+    .animal-food .row .col{
+        flex: 50%;
+        margin-bottom: 40px;
+    }
+    .second-fold-section .view-all-button{
+        margin-top: 30px;
+    }
+    #countdown ul li span{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .ctvalue{
+        font-size: 25px;
+    }
+    #countdown ul li{
+        height: 120px;
+        margin: 0px 5px;
+    }
+    .ft-des-text h5{
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+@media only screen and (max-width:1024px){
+
+    .footer-links-wrapper h4{
+        font-size: 24px;
+    }
+    .footer-links-wrapper h4{
+        width: 150px;
+    }
+    
+    .feature-products h5 {
+        font-size: 26px;
+    }
+    .pet-suppliment-text .btn.btn-style{
+        padding: 6px;
+        width: 120px;
+    }
+}
+@media only screen and (max-width:991px){
+
+    .complete-pet-care-tabs .tab-content{
+        padding-left: 50px;
+        margin-top: 0px;
+    }
+    .complete-pet-care-tabs .d-flex{
+        flex-direction: column;
+    }
+    .complete-pet-care-tabs .tab-content {
+        padding-left: 0px;
+        margin-top: 50px;
+    }
+    .complete-pet-care-tabs {
+        margin-top: 30px;
+    }
+    .brand-image{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .trusted-brands-box {
+        padding: 80px 20px 50px;
+    }
+    .post-thumbnail-text{
+        margin-bottom: 50px;
+    }
+    .space-top-bottom-100 {
+        padding: 80px 0px;
+    }
+    .ft-des{
+        margin-bottom: 20px;
+    }
+    .copyright-section p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-cards-list ul{
+        text-align: center;
+    }
+    .footer-links-box {
+        margin: 40px 0px;
+    }
+    .footer-bottom{
+        padding: 60px 0px 0px;
+    }
+    .dog-link{
+        margin-bottom: 30px;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        padding: 10px 10px;
+    }
+    .navbar-brand{
+        width: 160px;
+    }
+    .banner-content h1 img{
+        margin-top: -12px;
+    }
+    .feature-products{
+        margin-bottom: 40px;
+    }
+    .accessories-img img{
+        width: 100%;
+    }
+    .second-fold-section{
+        margin-top: 40px;
+    }
+    .shop-by-pet {
+        padding: 50px 0px 0px;
+    }
+    .early-bird-titles h4 br{
+        display: none;
+    }
+    .early-bird-titles h4{
+        font-size: 35px;
+    }
+    .early-bird {
+        margin-top: 0px;
+    }
+    .early-bird-text {
+        padding: 80px 0px 80px;
+    }
+    .complete-pet-care-solutions{
+        padding: 60px 0px 40px;
+    }
+    .header-buttons.header-buttons-mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width:767px){
+
+    .navbar-toggler{
+        background-color: #000000;
+    }
+    .spaceleft-right {
+        padding: 0px 15px;
+    }
+    .banner-content:after{
+        display: none;
+    }
+    header .navbar .container{
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .header-buttons{
+        display: none;
+    }
+    .header-buttons.header-buttons-mobile{
+        display: block;
+    }
+    .banner-content{
+        padding-top: 0px;
+    }
+    .navbar {
+        margin-top: 0px;
+    }
+    .header-buttons.header-buttons-mobile ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .shop-by-pet {
+        padding: 20px 0px 0px;
+    }
+    .pet-round-img{
+        margin-bottom: 30px;
+    }
+    .animal-food {
+        margin-top: 40px;
+    }
+    .second-fold-section {
+        padding: 0px 0px 80px;
+    }
+    .new-arrivals-section{
+        padding: 80px 0px;
+    }
+    .section-title h3 br{
+        display: none;
+    }
+}
+@media only screen and (max-width:575px){
+
+    .footer-news-letter h4{
+        text-align: center;
+    }
+    .footer-links-wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links-wrapper h4 {
+        width: auto;
+        margin-bottom: 20px;
+    }
+    .footer-cards-list ul li{
+        margin-bottom: 10px;
+    }
+    .banner-content h1 {
+        font-size: 30px;
+    }
+    .banner-content h1 img {
+        margin-top: -10px;
+        width: 65px;
+    }
+    .list-style ul li{
+        width: 100%;
+    }
+    .pet-addicts {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .feature-products h5{
+        font-size: 22px;
+    }
+    .shop-by-pet{
+        padding: 0px 0px 0px;
+    }
+    .pet-round-img h6{
+        font-size: 18px;
+    }
+    .section-title h3{
+        font-size: 32px;
+        margin: 0px 10px;
+    }
+    .animal-food {
+        margin-top: 20px;
+    }
+    .early-bird-text {
+        padding: 60px 0px 60px;
+    }
+    #countdown ul li span {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .ctvalue {
+        font-size: 18px;
+    }
+    .new-arrivals-section {
+        padding: 60px 0px;
+    }
+    .new-arrivals-section .view-all-button{
+        margin-top: 0px;
+    }
+    .complete-pet-care-tabs .nav{
+        width: 100%;
+    }
+    .trusted-brands-box {
+        padding: 60px 20px 50px;
+    }
+    .catimage{
+        display: none;
+    }
+    .animal-image{
+        display: none;
+    }
+    .animal-box{
+        width: auto;
+    }
+    .trusted-brands-box h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .trusted-brands-box hr {
+        margin: 30px 0px;
+    }
+    .supported-by {
+        padding: 60px 20px;
+    }
+    .review-slider {
+        margin-right: 0%;
+    }
+    .dark-cream {
+        background-size: 130px;
+    }
+    .post-thumbnail-text {
+        padding: 30px 15px;
+    }
+    .post-thumbnail-text h4{
+        font-size: 24px;
+    }
+    .pet-news-section.space-top-bottom-100{
+        padding-bottom: 30px;
+    }
+    .ft-des {
+        margin-bottom: 40px;
+    }
+    .footer-top {
+        padding: 40px 0px 0px;
+    }
+    .ft-des-text h5 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .footer-logo-box{
+        text-align: center;
+    }
+    .social-icons ul{
+        text-align: center;
+    }
+}
