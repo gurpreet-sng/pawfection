@@ -809,7 +809,7 @@ header .navbar .container{
     font-size: 16px;
 }
 .inner-page-title{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 .product-image{
     text-align: center;
@@ -982,11 +982,10 @@ input[type="range"] {
     width: 100%;
 }
 
-.img-selection {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100px;
+.img-selection{
+    width: 100%;
+    position: static;
+    display: flex;
 }
 
 .img-thumbnail:first-of-type {
@@ -994,12 +993,13 @@ input[type="range"] {
 }
 
 .img-thumbnail {
-    margin-top: 10px;
+    margin-top: 10px !important;
     width: 79%;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     cursor: pointer;
     transition: .3s ease;
     opacity: .5;
+    border-radius: 30px;
 }
 
 .img-thumbnail:hover {
@@ -1008,6 +1008,7 @@ input[type="range"] {
 
 .img-thumbnail.selected {
     opacity: 1;
+    border-color: #FFD902;
 }
 .secproductcol {
     display: flex;
@@ -1015,16 +1016,22 @@ input[type="range"] {
 
 .big-img {
     position: relative;
-    width: 419px  !important;
+    width: auto  !important;
     height: auto;
     border: 1px solid #ddd;
     cursor: zoom-in;
     overflow: hidden;
-    margin-left: 100px;
+    margin-left: 0px;
     background: #EEEEEE;
+    border-radius: 30px;
 }
-
-.big-img img.zoom {
+.img-selection{
+    margin-top: 20px;
+}
+.img-selection .img-thumbnail{
+    margin-right: 10px;
+}
+.big-img img.zoom{
     position: absolute;
     transition: width 0.2s ease-out, opacity 0.2s ease-out 0.2s;
 }
@@ -1044,7 +1051,7 @@ input[type="range"] {
 /* DT */
 .dt-name {
     color: #000;
-    font-family: 'Poppins';
+    font-family: "Fredoka", sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1052,7 +1059,7 @@ input[type="range"] {
 
 .dt-fl {
     color: #000;
-    font-family: 'Poppins';
+    font-family: "Fredoka", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -1092,6 +1099,7 @@ input[type="range"] {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 25px;
 }
 .dt-tex span {
     display: inline-block;
@@ -1150,31 +1158,31 @@ button.qty-btn-plus.btn-light:hover{
     text-align: center;
 }
 
-.add-cart-btn {
-    border: 1px solid #E40401;
-    background: #FFF;
+.add-cart-btn{
     text-align: center;
     padding: 8px 150px;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     text-align: center;
     font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    background-color: #000000;
+    border-radius: 50px;
 }
 
 .add-cart-btn:hover {
-    color: #fff;
-    background: #E40401;
+    color: #000;
+    background: #FFA028;
 }
 
 .buy-now-btn {
-    border: 1px solid #E40401;
+    border-radius: 50px;
     color: #fff;
-    background: #E40401;
+    background-color: #000000;
     text-align: center;
     padding: 8px 170px;
     text-decoration: none;
@@ -1182,15 +1190,14 @@ button.qty-btn-plus.btn-light:hover{
     font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
 }
 
-.buy-now-btn:hover {
+.buy-now-btn:hover{
     color: #000;
-    background: #fff;
-    border: 1px solid #E40401;
+    background: #FFA028;
 }
 
 .left-right {
@@ -1256,8 +1263,67 @@ padding: 10px;
     font-weight: 400;
     padding-top: 20px;
 }
+.dt-tex .btn{
+    border: 1px solid #000000;
+    border-radius: 50px;
+    margin: 0px 5px;
+}
+.dt-tex .btn:hover{
+    border-color: #BF494B;
+    color: #BF494B;
+}
+.product-title{
+    margin-bottom: 30px;
+}
 
+.accordion-style{
+    margin: 60px 0px;
+}
 
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bs-accordion-btn-focus-border-color);
+    outline: 0;
+    box-shadow: none !important;
+}
+.accordion-item{
+    border-radius: 0px !important;
+}
+.accordion-button{
+    border-radius: 0px !important;
+    font-size: 30px;
+    color: #1A1A1A !important;
+}
+.accordion-button:not(.collapsed){
+        background-color: #D0F9FF;
+}
+.accordion-style h5{
+    font-size: 26px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.accordion-style h6{
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.accordion-style .accordion-body{
+    padding: 40px 20px;
+}
+.imageholder{
+    margin: 20px 0px;
+}
+.recommended-products-section .section-title{
+    margin-bottom: 40px;
+}
+.recommended-products-section .view-all-button{
+    margin-top: 0px;
+}
+.recommended-products-section{
+    padding-bottom: 100px;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
@@ -1329,6 +1395,9 @@ padding: 10px;
 }
 @media only screen and (max-width:991px){
 
+    .product-title{
+        margin-top: 30px;
+    }
     .complete-pet-care-tabs .tab-content{
         padding-left: 50px;
         margin-top: 0px;
@@ -1470,10 +1539,45 @@ padding: 10px;
     .section-title h3 br{
         display: none;
     }
-    
+    .add-cart-btn,.buy-now-btn{
+        width: 100%;
+        display: block;
+    }
+    .accordion-button{
+        font-size: 22px;
+    }
+    .accordion-style h5 {
+        font-size: 24px;
+    }
+    .accordion-style .accordion-body {
+        padding: 30px 20px;
+    }
+    .dt-name{
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width:575px){
 
+    .accordion-button {
+        font-size: 18px;
+    }
+    .accordion-style .accordion-body{
+        padding: 25px 15px;
+    }
+    .dt-tex span {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dt-tex .btn{
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .add-cart-btn, .buy-now-btn{
+        padding: 10px 20px;
+        font-size: 18px;
+    }
     .colsettings{
         margin-bottom: 20px;
     }
@@ -1593,6 +1697,12 @@ padding: 10px;
     }
     .social-icons ul{
         text-align: center;
+    }
+    .accordion-style {
+        margin: 50px 0px 30px;
+    }
+    .accordion-style h5 {
+        font-size: 20px;
     }
 }
 
