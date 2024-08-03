@@ -1077,7 +1077,6 @@ input[type="range"] {
 
 .dt-mrp {
     color: #979797;
-    font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1087,7 +1086,6 @@ input[type="range"] {
 
 .dt-sale {
     color: #000;
-    font-family: 'Poppins';
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1111,7 +1109,6 @@ input[type="range"] {
 
 .dt-fl-qty {
     color: #1C1E1E;
-    font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -1120,7 +1117,6 @@ input[type="range"] {
 
 .st-fl-btn {
     color: #000;
-    font-family: 'Poppins';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -1163,7 +1159,6 @@ button.qty-btn-plus.btn-light:hover{
     text-decoration: none;
     color: #ffffff;
     text-align: center;
-    font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1186,7 +1181,6 @@ button.qty-btn-plus.btn-light:hover{
     padding: 8px 170px;
     text-decoration: none;
     text-align: center;
-    font-family: 'Poppins';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
