@@ -1442,6 +1442,10 @@ padding: 10px;
 }
 @media only screen and (max-width:1024px){
 
+    .banner-section h1{
+        font-size: 60px;
+        line-height: 80px;
+    }
     .footer-links-wrapper h4{
         font-size: 24px;
     }
@@ -1556,6 +1560,38 @@ padding: 10px;
 }
 @media only screen and (max-width:767px){
 
+    .banner-section h1{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .iframe-section {
+        margin-bottom: 60px;
+    }
+    .filter-form {
+        padding-right: 0px;
+    }
+    .contact-row a {
+        font-size: 18px;
+    }
+    .contact-us-text p {
+        font-size: 18px;
+    }
+    .iframe-wrapper iframe {
+        height: 410px;
+    }
+    .iframe-wrapper {
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+    .contact-us-text{
+        margin-top: 40px;
+    }
+    .banner-section{
+        padding: 100px 0px;
+    }
+    .padding-top-100 {
+        padding-top: 60px;
+    }
     .navbar-toggler{
         background-color: #000000;
     }
@@ -1625,9 +1661,28 @@ padding: 10px;
     .big-img{
         border-radius: 20px;
     }
+    .spaceleft-right-30 {
+        padding: 0px 20px;
+    }
 }
 @media only screen and (max-width:575px){
 
+    .padding-top-100 {
+        padding-top: 40px;
+    }
+    .contact-page-content h2{
+        font-size: 30px;
+    }
+    .banner-section h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .banner-section {
+        padding: 60px 0px;
+    }
+    .iframe-wrapper{
+        margin-top: 20px;
+    }
     .accordion-button {
         font-size: 18px;
     }
