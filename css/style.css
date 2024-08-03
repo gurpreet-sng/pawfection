@@ -1069,7 +1069,6 @@ input[type="range"] {
 
 .dt-off {
     color: #E40401;
-    font-family: "Poppins";
     font-size: 20px;
     font-style: normal;
     font-weight: 700;   
@@ -1096,7 +1095,6 @@ input[type="range"] {
 
 .dt-tex {
     color: #484848;
-    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1211,8 +1209,7 @@ button.qty-btn-plus.btn-light:hover{
 }
 
 .sec-relatrd{
-    color: #000;
-font-family: "Poppins";
+color: #000;
 font-size: 50px;
 text-align: center;
 padding-top: 30px;
@@ -1225,8 +1222,7 @@ font-weight: 700;
     padding: 60px 0px;
 }
 .tagp-free{
-    color: #1C1E1E;
-font-family: "Poppins";
+color: #1C1E1E;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
@@ -1237,7 +1233,6 @@ font-weight: 500;
 }
 .bg-text p{
     color: #FFF;
-    font-family: "Poppins";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -1251,14 +1246,12 @@ padding: 10px;
 }
 .freenmae-sec{
     color: #1C1E1E;
-    font-family: "Poppins";
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
 }
 .tagp-freeh6{
     color: #1C1E1E;
-    font-family: "Poppins";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -1555,6 +1548,12 @@ padding: 10px;
     }
     .dt-name{
         font-size: 30px;
+    }
+    .img-thumbnail{
+        border-radius: 20px;
+    }
+    .big-img{
+        border-radius: 20px;
     }
 }
 @media only screen and (max-width:575px){
