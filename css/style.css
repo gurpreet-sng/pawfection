@@ -20,6 +20,78 @@ body.white-body{
 .space-left-right{
     padding: 0px 50px;
 }
+.banner-section.contact-banner {
+    background-image: url(../images/contact-banner.jpg);
+}
+.spaceleft-right-30 {
+    padding: 0px 30px;
+}
+.banner-section h1 {
+    font-family: "Fredoka", sans-serif;
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0px;
+    line-height: 100px;
+}
+.contact-page-content h2 {
+    color: #000000;
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.contact-row h6 {
+    color: #000000;
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact-row a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+.filter-form {
+    padding-right: 50px;
+}
+.contact-page-content .btn.btn-style {
+    margin-top: 40px;
+}
+.iframe-wrapper {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 70px;
+}
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 710px;
+}
+.field-style {
+    height: 60px;
+    border: 1px solid #9E9E9E;
+    background-color: #ffffff;
+}
+.contact-us-text p {
+    color: #000000;
+    font-size: 20px;
+}
+textarea.form-control.field-style {
+    height: 154px;
+    margin-bottom: 30px;
+}
+.padding-top-100 {
+    padding-top: 100px;
+}
+.banner-section {
+    border-radius: 30px;
+    overflow: hidden;
+    background-image: url(../images/banner.jpg);
+    padding: 150px 0px;
+    background-size: cover;
+    z-index: 20;
+    position: relative;
+}
 .navbar-expand-md .navbar-nav .nav-link{
     font-size: 14px;
     line-height: 18px;
@@ -231,6 +303,9 @@ header .navbar .container{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
+}
+.iframe-section{
+    margin-bottom: 100px;
 }
 .section-title .ptag{
     color: #585858;
