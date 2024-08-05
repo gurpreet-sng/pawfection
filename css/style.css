@@ -830,9 +830,23 @@ header .navbar .container{
     border-radius: 50px;
     border: 0px;
     padding: 0px 20px;
-    background-image: url("../images/plain.png");
+    /*background-image: url("../images/plain.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right;*/
+}
+.news-letter-field{
+    position: relative;
+}
+.news-letter-field .btn{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border:0px !important;
+    border-radius: 0px !important;
+}
+.news-letter-field .btn-check:checked+.btn,.news-letter-field .btn.active,.news-letter-field .btn.show,.news-letter-field .btn:first-child:active, :not(.btn-check)+.btn:active{
+    border:0px !important;
+    border-radius: 0px !important;
 }
 .footer-cards-list ul{
     margin: 0px;
@@ -1387,6 +1401,9 @@ padding: 10px;
 }
 .recommended-products-section{
     padding-bottom: 100px;
+}
+.footer-news-letter{
+    position: relative;
 }
 @media only screen and (min-width: 1920px){
 
