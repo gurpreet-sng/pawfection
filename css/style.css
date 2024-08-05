@@ -4,6 +4,12 @@ body{
     font-family: "Readex Pro", sans-serif;
     background-color: #faf0dd;
 }
+.margin-top-bottom{
+    margin:100px 0px;
+}
+.margin-bottom{
+    margin-bottom: 100px;
+}
 body.white-body{
     background-color: #ffffff
 }
@@ -1457,7 +1463,59 @@ input[type=checkbox]:checked:disabled + label:before{
     border-color: #F7C28F;
 }
 */
-
+.we-love-text ul{
+    margin: 0px;
+    padding: 0px;
+}
+.we-love-text ul li {
+    list-style: none;
+    width: 50%;
+    float: left;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 50px;
+    height: 36px;
+    line-height: 19px;
+}
+.we-love-text ul li a {
+    text-decoration: none;
+    color: #154270;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-left: 0px;
+    margin-top: 5px;
+    display: inline-block;
+}
+.we-love-text ul li:before {
+    content: "";
+    width: 35px;
+    height: 36px;
+    background-image: url(../images/tick.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+}
+.happy-clients-image{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.we-love-text .btn.btn-style{
+    margin-top: 20px;
+}
+.meet-team-section .section-title{
+    margin-bottom: 60px;
+}
+.team-member-data {
+    text-align: center;
+}
+.team-member-data h5 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 26px;
+    color: #000000;
+    margin: 30px 0px 10px;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
