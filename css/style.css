@@ -475,6 +475,7 @@ header .navbar .container{
     text-align: center;
     margin-bottom: 60px;
     text-decoration: none;
+    display: inline-block;
 }
 .product-box h6{
     color: #1D256B;
@@ -672,6 +673,7 @@ header .navbar .container{
 .post-thumbnail-wrapper{
     border-radius: 10px;
     box-shadow: 0px 0px 10px #dddddd;
+    display: inline-block;
 }
 .post-thumbnail-text{
     padding: 30px;
@@ -852,7 +854,6 @@ header .navbar .container{
 }
 .news-letter-field .btn-check:checked+.btn,.news-letter-field .btn.active,.news-letter-field .btn.show,.news-letter-field .btn:first-child:active, :not(.btn-check)+.btn:active{
     border:0px !important;
-    border-radius: 0px !important;
 }
 .footer-cards-list ul{
     margin: 0px;
@@ -1516,6 +1517,27 @@ input[type=checkbox]:checked:disabled + label:before{
     color: #000000;
     margin: 30px 0px 10px;
 }
+.pet-news-section.events-page-content .post-thumbnail-wrapper{
+    margin-bottom: 40px;
+}
+.blog-text {
+    margin-top: 60px;
+}
+.blog-text-title {
+    margin-bottom: 30px;
+}
+.blog-text h4 {
+    font-size: 40px;
+}
+.blog-text-title p {
+    color: #E94241;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.blog-detail-page-content{
+    margin-bottom: 60px;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
@@ -1593,6 +1615,13 @@ input[type=checkbox]:checked:disabled + label:before{
 
     .product-title{
         margin-top: 30px;
+    }
+    .happy-clients-image{
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    .margin-bottom {
+        margin-bottom: 60px;
     }
     .complete-pet-care-tabs .tab-content{
         padding-left: 50px;
@@ -1685,9 +1714,21 @@ input[type=checkbox]:checked:disabled + label:before{
     .colsettings{
         display: none;
     }
+    .meet-team-section .row {
+        flex-direction: column;
+    }
+    .meet-team-section .col {
+        margin-bottom: 40px;
+    }
 }
 @media only screen and (max-width:767px){
 
+    .blog-text h4 {
+        font-size: 30px;
+    }
+    .blog-text {
+        margin-top: 30px;
+    }
     .banner-section h1{
         font-size: 50px;
         line-height: 70px;
@@ -1795,9 +1836,24 @@ input[type=checkbox]:checked:disabled + label:before{
     .spaceleft-right-30 {
         padding: 0px 20px;
     }
+    .space-top-bottom-100 {
+        padding: 60px 0px;
+    }
+    .love-to-care-section .section-title.text-left{
+        text-align: center;
+    }
+    .love-to-care-section .we-love-text p{
+        text-align: center;
+    }   
+    .meet-team-section .section-title {
+        margin-bottom: 40px;
+    }
 }
 @media only screen and (max-width:575px){
 
+    .space-top-bottom-100 {
+        padding: 40px 0px;
+    }
     .padding-top-100 {
         padding-top: 40px;
     }
