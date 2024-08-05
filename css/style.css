@@ -223,8 +223,13 @@ header .navbar .container{
     font-size: 12px;
     padding: 10px 30px;
     line-height: 20px;
+    border: 0px !important;
 }
 .btn.btn-style:hover{
+    background-color: #ED6436;
+}
+.btn.btn-style:active{
+    color: #ffffff;
     background-color: #ED6436;
 }
 .banner-content .list-style{
