@@ -1405,7 +1405,9 @@ padding: 10px;
 .footer-news-letter{
     position: relative;
 }
-
+.contact-us-text.privacy-text .contact-row{
+    margin-bottom: 40px;
+}
 /*
 input[type=checkbox] + label {
     display: block;
@@ -1653,6 +1655,9 @@ input[type=checkbox]:checked:disabled + label:before{
     }
     .contact-us-text{
         margin-top: 40px;
+    }
+    .contact-us-text.privacy-text{
+        margin-top: 0px;
     }
     .banner-section{
         padding: 100px 0px;
