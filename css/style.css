@@ -457,6 +457,7 @@ header .navbar .container{
 }
 .early-bird{
     margin-top: -50px;
+    position: absolute;
 }
 .new-arrivals-section{
     background-color: #ffffff;
@@ -1574,7 +1575,7 @@ form label {
     margin-top: 0px;
 }
 .early-bird img{
-    height: 702px;
+    height: 810px;
 }
 @media only screen and (min-width: 1920px){
 
@@ -1582,7 +1583,7 @@ form label {
         width: 1720px;
     }
     .early-bird img{
-        height: 702px;
+        height: 810px;
     }
 }
 @media only screen and (max-width: 1400px){
