@@ -277,12 +277,16 @@ header .navbar .container{
 }
 .feature-products{
     position: relative;
+    overflow: hidden;
 }
+.feature-products:hover .feature-products-text{
+    bottom: 50px;
+}
+
 .feature-products h5{
     font-size: 40px;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
-    position: absolute;
 }
 .feature-products.accessories h5{
     bottom: 10px;
@@ -1592,18 +1596,22 @@ form label {
     position: absolute;
     text-align: right;
     padding: 20px;
-    width: 200px;
+    width: 260px;
     right: 0;
-    top: 25px;
-    opacity: 0;
+    top: auto;
+    bottom: -120px;
+    transition: all 0.3s ease-in-out 0s;
 }
 .feature-products:hover .feature-products-text{
-    opacity: 1;
+    /*transition: all 0.3s ease-in-out 0s;*/
 }
 .feature-products-text.pet-suppliments-text{
     width: 100%;
     text-align: left;
-    top: 50px;
+    top: 250px;
+}
+.feature-products.pet-suppliments:hover .feature-products-text.pet-suppliments-text{
+    top: 55px;
 }
 @media only screen and (min-width: 1920px){
 
