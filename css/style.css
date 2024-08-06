@@ -1845,6 +1845,9 @@ form label {
 }
 @media only screen and (max-width:767px){
 
+    .complete-pet-care-tabs .nav{
+        width: 100%;
+    }
     .header-buttons{
         position: absolute;
         width: 90px;
