@@ -1608,7 +1608,7 @@ form label {
 .feature-products-text.pet-suppliments-text{
     width: 100%;
     text-align: left;
-    top: 250px;
+    top: 350px;
 }
 .feature-products.pet-suppliments:hover .feature-products-text.pet-suppliments-text{
     top: 55px;
