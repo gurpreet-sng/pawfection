@@ -1637,12 +1637,14 @@ form label {
     .exclusive-early-bird .row{
         align-items: center;
     }
-    .early-bird {
+    .early-bird{
         margin-top: 0px;
+        position: static;
     }
-    .early-bird img {
+    .early-bird img{
         height: auto;
     }
+    
     .banner-section h1{
         font-size: 60px;
         line-height: 80px;
