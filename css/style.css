@@ -419,7 +419,7 @@ header .navbar .container{
     padding: 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 #countdown ul li{
     list-style: none;
@@ -432,6 +432,7 @@ header .navbar .container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0px 10px;
 }
 #countdown ul li span{
     display: block;
@@ -1569,17 +1570,19 @@ form label {
     font-family: "Roboto", sans-serif;
     margin-right: 25px;
 }
-#countdown{
-    width: 586px;
-    margin: auto;
-}
 .new-arrivals-section .view-all-button{
     margin-top: 0px;
+}
+.early-bird img{
+    height: 702px;
 }
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
         width: 1720px;
+    }
+    .early-bird img{
+        height: 702px;
     }
 }
 @media only screen and (max-width: 1400px){
@@ -1630,6 +1633,15 @@ form label {
 }
 @media only screen and (max-width:1024px){
 
+    .exclusive-early-bird .row{
+        align-items: center;
+    }
+    .early-bird {
+        margin-top: 0px;
+    }
+    .early-bird img {
+        height: auto;
+    }
     .banner-section h1{
         font-size: 60px;
         line-height: 80px;
@@ -1780,9 +1792,6 @@ form label {
     }
     .product-box{
         display: block;
-    }
-    #countdown {
-        width: auto;
     }
     .service-page-content .list-group strong {
         font-size: 16px;
