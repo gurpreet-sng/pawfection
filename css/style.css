@@ -480,7 +480,7 @@ header .navbar .container{
     text-align: center;
     margin-bottom: 60px;
     text-decoration: none;
-    display: inline-block;
+    display: block;
 }
 .product-box h6{
     color: #1D256B;
@@ -1569,6 +1569,13 @@ form label {
     font-family: "Roboto", sans-serif;
     margin-right: 25px;
 }
+#countdown{
+    width: 586px;
+    margin: auto;
+}
+.new-arrivals-section .view-all-button{
+    margin-top: 0px;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
@@ -1644,6 +1651,9 @@ form label {
 }
 @media only screen and (max-width:991px){
 
+    .hide-on-mobile{
+        display: none;
+    }
     .filter-form {
         padding-right: 0px;
         margin-bottom: 40px;
@@ -1758,6 +1768,22 @@ form label {
 }
 @media only screen and (max-width:767px){
 
+    .header-buttons{
+        position: absolute;
+        width: 90px;
+        margin: auto;
+        left: auto;
+        right: 60px;
+        top: 20px;
+        bottom: auto;
+        height: 28px;
+    }
+    .product-box{
+        display: block;
+    }
+    #countdown {
+        width: auto;
+    }
     .service-page-content .list-group strong {
         font-size: 16px;
     }
@@ -1830,12 +1856,13 @@ form label {
     header .navbar .container{
         border-radius: 10px;
         padding: 10px;
+        position: relative;
     }
-    .header-buttons{
+    /*.header-buttons{
         display: none;
-    }
+    }*/
     .header-buttons.header-buttons-mobile{
-        display: block;
+        display: none;
     }
     .banner-content{
         padding-top: 0px;
@@ -2072,5 +2099,8 @@ form label {
     }
     .accordion-style h5 {
         font-size: 20px;
+    }
+    .navbar-brand {
+        width: 120px;
     }
 }
