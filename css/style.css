@@ -1574,17 +1574,28 @@ form label {
 .new-arrivals-section .view-all-button{
     margin-top: 0px;
 }
-.early-bird img{
+.early-dog img{
     height: 810px;
+}
+.early-bird {
+    margin-top: -50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.early-food{
+    width: 400px;
+    margin-left: -100px;
 }
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
         width: 1720px;
     }
-    .early-bird img{
+    .early-dog img{
         height: 810px;
     }
+    
 }
 @media only screen and (max-width: 1400px){
 
@@ -1594,6 +1605,10 @@ form label {
     .review-slider {
         margin-right: 45%;
     }
+    .early-bird .early-food{
+        display: none;
+    }
+    
 }   
 @media only screen and (max-width:1199px){
 
@@ -1641,10 +1656,10 @@ form label {
         margin-top: 0px;
         position: static;
     }
-    .early-bird img{
+    .early-dog img{
         height: auto;
     }
-    
+
     .banner-section h1{
         font-size: 60px;
         line-height: 80px;
@@ -1663,6 +1678,7 @@ form label {
         padding: 6px;
         width: 120px;
     }
+    
 }
 @media only screen and (max-width:991px){
 
