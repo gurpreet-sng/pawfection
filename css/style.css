@@ -573,6 +573,9 @@ header .navbar .container{
 .animal-box-wrapper.skyblue .animal-box{
     background-color: #d0f9ff;
 }
+.animal-box-wrapper.musterd .animal-box{
+    background-color: #ffe1b5;
+}   
 .catimage{
     margin-right: 20px;
 }
@@ -2003,6 +2006,12 @@ form label {
 }
 @media only screen and (max-width:575px){
 
+    .animal-box-wrapper{
+        display: block;
+    }
+    .complete-pet-care-tabs .tab-content{
+        width: 100%;
+    }
     .spaceleft-right-30 {
         padding: 0px 15px;
     }
