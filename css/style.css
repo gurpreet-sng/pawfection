@@ -296,6 +296,7 @@ header .navbar .container{
     bottom: 0px;
     padding: 20px;
     top: 0px;
+    width: 100%;
 }
 .pet-suppliment-text .btn.btn-style{
     background-color: #ED6436;
@@ -1587,6 +1588,23 @@ form label {
     width: 400px;
     margin-left: -100px;
 }
+.feature-products-text{
+    position: absolute;
+    text-align: right;
+    padding: 20px;
+    width: 200px;
+    right: 0;
+    top: 25px;
+    opacity: 0;
+}
+.feature-products:hover .feature-products-text{
+    opacity: 1;
+}
+.feature-products-text.pet-suppliments-text{
+    width: 100%;
+    text-align: left;
+    top: 50px;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
@@ -1595,7 +1613,6 @@ form label {
     .early-dog img{
         height: 810px;
     }
-    
 }
 @media only screen and (max-width: 1400px){
 
