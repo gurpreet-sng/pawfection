@@ -302,12 +302,10 @@ header .navbar .container{
     top: 0px;
     width: 100%;
 }
-.pet-suppliment-text .btn.btn-style{
+.btn.btn-style:hover{
     background-color: #ED6436;
 }
-.pet-suppliment-text .btn.btn-style:hover{
-    background-color: #1D256B;
-}
+
 .section-title i{
     display: block;
     margin-bottom: 5px;
@@ -1671,6 +1669,12 @@ form label {
         font-size: 26px;
         line-height: 26px;
     }
+    .feature-products:hover .feature-products-text {
+        bottom: 0px;
+    }
+    .feature-products.pet-suppliments:hover .feature-products-text.pet-suppliments-text {
+        top: 35px;
+    }
 }
 @media only screen and (max-width:1024px){
 
@@ -1820,6 +1824,20 @@ form label {
     }
     .meet-team-section .col {
         margin-bottom: 40px;
+    }
+    .feature-products-text{
+        position: static;
+        width: 100%;
+        text-align: left;
+    }
+    .feature-products-text{
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .pet-suppliment-text {
+        position: static;
+        padding: 0;
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width:767px){
