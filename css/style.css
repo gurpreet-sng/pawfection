@@ -1792,6 +1792,10 @@ form label {
     .feature-products.pet-suppliments:hover .feature-products-text.pet-suppliments-text {
         top: 35px;
     }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        width: 970px;
+        margin-left: -510px;
+    }
 }
 @media only screen and (max-width:1024px){
 
@@ -1824,7 +1828,10 @@ form label {
         padding: 6px;
         width: 120px;
     }
-    
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        width: 930px;
+        margin-left: -491px;
+    }
 }
 @media only screen and (max-width:991px){
 
@@ -1956,9 +1963,52 @@ form label {
         padding: 0;
         margin-top: 10px;
     }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        width: 720px;
+        margin-left: -338px;
+    }
+    .submenu-wrapper h3{
+        font-size: 18px;
+    }
+    .submenu-wrapper .row {
+        align-items: self-end;
+    }
 }
 @media only screen and (max-width:767px){
 
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+    .navbar-expand-md .navbar-nav li .submenu-wrapper {
+        display: flex;   
+    }
+    .submenu-wrapper-li > ul > li.sub-one > ul{
+        display: block;
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .submenu-wrapper-li ul li.sub-two > ul{
+        display: block;
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .submenu-wrapper-li ul li.sub-three > ul{
+        display: block;
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        padding: 10px 0px 0px;
+        position: static;
+    }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper .row{
+        flex-direction: column;
+    }
     .complete-pet-care-tabs .nav{
         width: 100%;
     }
