@@ -1614,6 +1614,86 @@ form label {
 .feature-products.pet-suppliments:hover .feature-products-text.pet-suppliments-text{
     top: 55px;
 }
+.navbar-expand-md .navbar-nav li:hover .submenu-wrapper{
+    display: flex;
+}
+.navbar-expand-md .navbar-nav li .submenu-wrapper{
+    position: absolute;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 40px 40px 0px;
+    box-shadow: 0px 0px 10px 0px #f2f2f2f2;
+    width: 1180px;
+    display: flex;
+    margin-left: -500px;
+    display: none;
+    z-index: 20;
+}
+.banner-section-wrapper{
+    position: relative;
+    z-index: 10;
+}
+.submenu-wrapper h3{
+    font-family: "Fredoka", sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: #1D256B;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.submenu-wrapper .row{
+    width: 100%;
+}
+.submenu-wrapper a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+.submenu-wrapper .submenu-wrapper-li{
+    margin-bottom: 30px;
+}
+.submenu-wrapper .submenu-wrapper-li ul{
+    margin: 0px;
+    padding: 0px;
+}
+.submenu-wrapper .submenu-wrapper-li ul li{
+    list-style: none;
+    margin: 12px 0px;
+}
+.submenu-wrapper-li li.sub-one ul{
+    position: absolute;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px #dddddd;
+    background-color: #ffffff;
+}
+.submenu-wrapper-li ul li ul{
+    padding: 10px;
+}
+
+
+.submenu-wrapper-li > ul > li.sub-one > ul{
+    display: none;
+}
+.submenu-wrapper-li > ul > li.sub-one:hover > ul{
+    display: block;
+}
+
+.submenu-wrapper-li ul li.sub-two > ul{
+    display: none;
+}
+.submenu-wrapper-li ul li.sub-two:hover > ul{
+    display: block;
+}
+
+
+.submenu-wrapper-li ul li.sub-three > ul{
+    display: none;
+}
+.submenu-wrapper-li ul li.sub-three:hover > ul{
+    display: block;
+}
+
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
