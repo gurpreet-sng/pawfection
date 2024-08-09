@@ -1651,13 +1651,13 @@ form label {
 }
 .submenu-wrapper h3{
     font-family: "Fredoka", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 26px;
     color: #1D256B;
     font-weight: 600;
     margin-bottom: 0px;
 }
-.submenu-wrapper h3:hover{
+.submenu-wrapper li:hover h3{
     color: #ffffff;
 }
 .submenu-wrapper .row{
@@ -1670,6 +1670,18 @@ form label {
     color: #000000;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 8px;
+}
+.menu-service-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu-service-box h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.menu-list-td.single-link{
+    padding: 0px 5px;
 }
 .submenu-wrapper .submenu-wrapper-li{
     margin-bottom: 30px;
@@ -1712,7 +1724,47 @@ form label {
     padding: 10px;
 }
 
+.w-30{
+    width: 30% !important;
+}
+.w-70{
+    width: 70% !important;
+}
+.pet-category-box {
+    background-color: #f2f2f2;
+    margin: 0px 5px;
+    padding: 5px;
+}
+.menu-list-style {
+    position: absolute;
+    right: 0px;
+    width: auto;
+    background-color: #ddd;
+    display: flex;
+    top: 0;
+    left: 200px;
+    padding: 20px;
+    justify-content: space-between;
+}
 
+.menu-service-box{
+    
+}
+.pet-container{
+    background-color: #9cd1e1;
+}
+.pet-container {
+    background-color: #9cd1e1;
+    padding: 5px;
+    margin: 5px;
+}
+.menu-list-col{
+    background-color: #f2f2f2;
+    padding: 5px 0px;
+}
+.menu-list-td{
+
+}
 .submenu-wrapper-li > ul > li.sub-one > ul{
     display: none;
     display: block;
