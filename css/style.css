@@ -7,6 +7,9 @@ body{
 .margin-top-bottom{
     margin:100px 0px;
 }
+.menu-section-wrapper{
+    border-top: 1px solid #dddddd;
+}
 .margin-bottom{
     margin-bottom: 100px;
 }
@@ -20,8 +23,10 @@ body.white-body{
     display: none;
 }
 .navbar-nav.me-auto{
-    margin-left: auto!important;
-    margin-right: auto!important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100%;
+    justify-content: space-between;
 }
 .space-left-right{
     padding: 0px 50px;
@@ -113,6 +118,7 @@ textarea.form-control.field-style {
 .header-buttons ul{
     margin: 0px;
     padding: 0px;
+    text-align: right;
 }
 .header-buttons ul li{
     list-style: none;
@@ -143,10 +149,14 @@ textarea.form-control.field-style {
     top: -7px;
 }
 header .navbar .container{
-    background-color: #ffffff;
-    border-radius: 100px;
     margin-top: 0px;
+}
+.header-section-wrapper{
+    background-color: #ffffff;
     box-shadow: 0px 0px 10px 0px #dddddd;
+}
+.header-top-style{
+    padding: 10px 0px;
 }
 .banner-content h1{
     font-family: "Fredoka", sans-serif;
@@ -268,7 +278,7 @@ header .navbar .container{
     margin: 0px;
 }
 .navbar{
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .second-fold-section{
     padding: 0px 0px 100px;
@@ -1623,12 +1633,12 @@ form label {
     margin: 0px;
     padding: 40px 20px 0px;
     box-shadow: 0px 0px 10px 0px #f2f2f2f2;
-    width: 1180px;
-    margin-left: -630px;
+    width: 100%;
     display: none;
+    display: flex;
     z-index: 20;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .navbar-expand-md .navbar-nav .nav-link i{
     font-size: 16px;
@@ -1641,14 +1651,18 @@ form label {
 }
 .submenu-wrapper h3{
     font-family: "Fredoka", sans-serif;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 18px;
     color: #1D256B;
-    font-weight: 700;
-    margin-bottom: 15px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.submenu-wrapper h3:hover{
+    color: #ffffff;
 }
 .submenu-wrapper .row{
     width: 100%;
+    flex-direction: column;
 }
 .submenu-wrapper a{
     display: block;
@@ -1660,11 +1674,15 @@ form label {
 .submenu-wrapper .submenu-wrapper-li{
     margin-bottom: 30px;
     position: relative;
+    width: 100%;
 }
 .submenu-wrapper .submenu-wrapper-li ul{
     margin: 0px;
     padding: 0px;
     position: relative;
+    position: absolute;
+    position: static;
+    right: 0px;
 }
 .submenu-wrapper .submenu-wrapper-li ul li{
     list-style: none;
@@ -1697,7 +1715,8 @@ form label {
 
 .submenu-wrapper-li > ul > li.sub-one > ul{
     display: none;
-    left: 20px;
+    display: block;
+    left: 200px;
     width: 200px;
 }
 .submenu-wrapper-li > ul > li.sub-one:hover > ul{
@@ -1706,22 +1725,40 @@ form label {
 
 .submenu-wrapper-li ul li.sub-two > ul{
     display: none;
-    left: 40px;
+    display: block;
+    left: 200px;
     width: 200px;
 }
 .submenu-wrapper-li ul li.sub-two:hover > ul{
     display: block;
 }
 
+.submenu-wrapper-li > ul{
+    width: 200px;
+}
 
 .submenu-wrapper-li ul li.sub-three > ul{
     display: none;
-    left: 60px;
+    display: block;
+    left: 200px;
     width: 200px;
 }
 .submenu-wrapper-li ul li.sub-three:hover > ul{
     display: block;
 }
+
+
+.submenu-wrapper-li ul li.sub-four > ul{
+    display: none;
+    display: block;
+    left: 200px;
+    width: 200px;
+}
+.submenu-wrapper-li ul li.sub-four:hover > ul{
+    display: block;
+}
+
+
 .list-style.pet-services{
     margin-top: 50px;
 }
