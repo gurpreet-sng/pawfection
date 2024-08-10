@@ -1506,7 +1506,7 @@ input[type=checkbox]:checked:disabled + label:before{
     margin-bottom: 25px;
     position: relative;
     padding-left: 50px;
-    height: 36px;
+    /*height: 36px;*/
     line-height: 19px;
 }
 .we-love-text ul li a {
@@ -1527,6 +1527,9 @@ input[type=checkbox]:checked:disabled + label:before{
     background-size: cover;
     position: absolute;
     left: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 .happy-clients-image{
     border-radius: 30px;
@@ -1820,10 +1823,11 @@ form label {
 
 
 .list-style.pet-services{
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .we-love-text .list-style.pet-services ul li{
-    line-height: 32px;
+    line-height: 24px;
 }
 .pet-container h2{
     font-family: "Fredoka", sans-serif;
