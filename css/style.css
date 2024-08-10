@@ -1867,6 +1867,16 @@ form label {
 .sub-one{
     cursor: pointer;
 }
+.price-style h4{
+    font-family: "Fredoka", sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    color: #1D256B;
+    font-weight: 700;
+}
+.price-style small{
+    color: #1D256B;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
