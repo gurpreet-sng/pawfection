@@ -2112,6 +2112,10 @@ form label {
 }
 @media only screen and (max-width:767px){
 
+    .submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style {
+        visibility: visible;
+        opacity: 1;
+    }
     .main-logo{
         text-align: center;
         margin-bottom: 10px;
