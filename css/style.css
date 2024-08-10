@@ -104,10 +104,10 @@ textarea.form-control.field-style {
     position: relative;
 }
 .navbar-expand-md .navbar-nav .nav-link{
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     padding: 15px 30px;
     color: #333333;
     text-align: center;
@@ -1640,7 +1640,7 @@ form label {
     height: 585px;
 }
 .navbar-expand-md .navbar-nav .nav-link i{
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     top: 2px;
 }
@@ -2030,6 +2030,10 @@ form label {
     }
     .navbar-expand-md .navbar-nav .nav-link{
         padding: 10px 10px;
+        font-size: 16px;
+    }
+    .banner-content:before{
+        display: none;
     }
     .navbar-brand{
         width: 160px;
