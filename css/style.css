@@ -1635,10 +1635,9 @@ form label {
     box-shadow: 0px 0px 10px 0px #f2f2f2f2;
     width: 100%;
     display: none;
-    display: flex;
     z-index: 20;
-    align-items: center;
     justify-content: left;
+    height: 585px;
 }
 .navbar-expand-md .navbar-nav .nav-link i{
     font-size: 16px;
@@ -1670,15 +1669,17 @@ form label {
     color: #000000;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 .menu-service-box h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    font-family: "Fredoka", sans-serif;
 }
 .menu-service-box h5 {
     font-size: 18px;
     font-weight: 700;
+    font-family: "Fredoka", sans-serif;
 }
 .menu-list-td.single-link{
     padding: 0px 5px;
@@ -1733,7 +1734,7 @@ form label {
 .pet-category-box {
     background-color: #f2f2f2;
     margin: 0px 5px;
-    padding: 5px;
+    padding: 10px;
 }
 .menu-list-style {
     position: absolute;
@@ -1743,19 +1744,18 @@ form label {
     display: flex;
     top: 0;
     left: 200px;
-    padding: 20px;
+    padding: 10px;
     justify-content: space-between;
 }
-
-.menu-service-box{
-    
+.menu-list-td a:hover{
+    color: #ED6436;
 }
 .pet-container{
     background-color: #9cd1e1;
 }
 .pet-container {
     background-color: #9cd1e1;
-    padding: 5px;
+    padding: 5px 5px 10px;
     margin: 5px;
 }
 .menu-list-col{
@@ -1816,6 +1816,52 @@ form label {
 }
 .we-love-text .list-style.pet-services ul li{
     line-height: 32px;
+}
+.pet-container h2{
+    font-family: "Fredoka", sans-serif;
+    font-size: 30px;
+    color: #1D256B;
+    font-weight: 600;
+    padding: 0px 5px;
+}
+.submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.submenu-wrapper .submenu-wrapper-li ul li.sub-one:hover .menu-list-style{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+.search-section-wrapper form{
+    position: relative;
+    margin-left: 50px;
+}
+.search-section-wrapper .btn.btn-outline-success{
+    position: absolute;
+    right: 0;
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+.search-section-wrapper .btn.btn-outline-success:hover{
+    background-color: #ED6436;
+    border-color: #ED6436;
+}
+.header-section-wrapper .navbar-brand{
+    display: inline-block;
+}
+.search-section-wrapper .form-control:focus {
+    border-color: #ED6436;
+    outline: 0;
+    box-shadow: none;
+}
+.search-section-wrapper .form-control{
+    border-color: #000000;
+}
+.sub-one{
+    cursor: pointer;
 }
 @media only screen and (min-width: 1920px){
 
@@ -1881,10 +1927,6 @@ form label {
     .feature-products.pet-suppliments:hover .feature-products-text.pet-suppliments-text {
         top: 35px;
     }
-    .navbar-expand-md .navbar-nav li .submenu-wrapper{
-        width: 970px;
-        margin-left: -510px;
-    }
 }
 @media only screen and (max-width:1024px){
 
@@ -1918,8 +1960,7 @@ form label {
         width: 120px;
     }
     .navbar-expand-md .navbar-nav li .submenu-wrapper{
-        width: 930px;
-        margin-left: -491px;
+        height: 605px;
     }
 }
 @media only screen and (max-width:991px){
@@ -2052,19 +2093,53 @@ form label {
         padding: 0;
         margin-top: 10px;
     }
-    .navbar-expand-md .navbar-nav li .submenu-wrapper{
-        width: 720px;
-        margin-left: -338px;
-    }
     .submenu-wrapper h3{
         font-size: 18px;
     }
     .submenu-wrapper .row {
         align-items: self-end;
     }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        padding: 20px 10px 0px;
+    }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper {
+        height: 805px;
+    }
 }
 @media only screen and (max-width:767px){
 
+    .main-logo{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .header-buttons{
+        margin-top: 10px;
+    }
+    .search-section-wrapper form{
+        margin-left: 0px;
+    }
+    .header-buttons ul{
+        text-align: center;
+    }
+    .menu-list-style{
+        position: static;
+        flex-direction: column;
+    }
+    .submenu-wrapper-li > ul {
+        width: 100%;
+    }
+    .menu-list-col.w-30{
+        width: 100% !important;
+    }
+    .menu-list-col.w-70{
+        width: 100% !important;
+    }
+    .submenu-wrapper .submenu-wrapper-li{
+        margin-bottom: 0px;
+    }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper {
+        height: auto;
+    }
     .navbar-expand-md .navbar-nav li .submenu-wrapper{
         margin-left: 0px;
         width: 100%;
@@ -2101,16 +2176,7 @@ form label {
     .complete-pet-care-tabs .nav{
         width: 100%;
     }
-    .header-buttons{
-        position: absolute;
-        width: 90px;
-        margin: auto;
-        left: auto;
-        right: 60px;
-        top: 20px;
-        bottom: auto;
-        height: 28px;
-    }
+    
     .product-box{
         display: block;
     }
@@ -2185,8 +2251,9 @@ form label {
     }
     header .navbar .container{
         border-radius: 10px;
-        padding: 10px;
+        padding: 0px;
         position: relative;
+        justify-content: flex-end;
     }
     /*.header-buttons{
         display: none;
@@ -2262,6 +2329,9 @@ form label {
 }
 @media only screen and (max-width:575px){
 
+    .pet-category-wrapper.d-flex{
+        flex-direction: column;
+    }
     .animal-box-wrapper{
         display: block;
     }
@@ -2436,7 +2506,7 @@ form label {
     .accordion-style h5 {
         font-size: 20px;
     }
-    .navbar-brand {
-        width: 120px;
+    .navbar-brand{
+        width: 180px;
     }
 }
