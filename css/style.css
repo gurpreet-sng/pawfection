@@ -1673,7 +1673,6 @@ form label {
     padding: 0px;
     width: 100%;
     display: none;
-    display: block;
     z-index: 20;
     justify-content: left;
     height: 585px;
@@ -1875,9 +1874,6 @@ form label {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.3s linear;
-
-    visibility: visible;
-    opacity: 1;
 }
 .submenu-wrapper .submenu-wrapper-li ul li.sub-one:hover .menu-list-style{
     display: flex;
