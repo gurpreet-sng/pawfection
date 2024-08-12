@@ -11,6 +11,15 @@ body{
     display: inline-block;
     margin-bottom: 30px;
 }
+.pet-category-wrapper.d-flex{
+    justify-content: space-between;
+}
+.pet-category-wrapper.d-flex div:last-child{
+    border: 0px;
+}
+.rabbit-link{
+    margin-top: 20px;
+}
 .menu-section-wrapper{
     border-top: 1px solid #dddddd;
 }
