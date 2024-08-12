@@ -114,12 +114,24 @@ textarea.form-control.field-style {
     font-size: 18px;
     line-height: 20px;
     font-style: normal;
-    font-weight: 500;
-    padding: 15px 30px;
+    font-weight: 600;
+    padding: 15px 15px;
     color: #000000;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: "Fredoka", sans-serif;
+    cursor: pointer;
+}
+.book-our-services-link{
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+}
+.navbar-expand-md .navbar-nav .nav-link i{
+    display: inline-block;
+    margin-right: 10px;
+}
+.navbar-expand-md .navbar-nav .nav-link i img{
+    vertical-align: bottom;
 }
 .spaceleft-right{
     padding: 0px 60px;
@@ -288,6 +300,7 @@ header .navbar .container{
 }
 .navbar{
     margin-top: 0px;
+    padding: 0px;
 }
 .second-fold-section{
     padding: 0px 0px 100px;
@@ -1643,7 +1656,7 @@ form label {
     position: absolute;
     background-color: #ffffff;
     margin: 0px;
-    padding: 40px 20px 0px;
+    padding: 0px;
     box-shadow: 0px 0px 10px 0px #f2f2f2f2;
     width: 100%;
     display: none;
@@ -1652,25 +1665,21 @@ form label {
     justify-content: left;
     height: 585px;
 }
-.navbar-expand-md .navbar-nav .nav-link i{
-    font-size: 20px;
-    position: relative;
-    top: 2px;
-}
 .banner-section-wrapper{
     position: relative;
     z-index: 10;
 }
 .submenu-wrapper h3{
     font-family: "Fredoka", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
-    color: #1D256B;
-    font-weight: 600;
+    color: #000000;
+    font-weight: 500;
     margin-bottom: 0px;
+    text-transform: capitalize;
 }
 .submenu-wrapper li:hover h3{
-    color: #ffffff;
+    color: #000000;
 }
 .submenu-wrapper .row{
     width: 100%;
@@ -1683,19 +1692,29 @@ form label {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 14px;
+    font-family: "Fredoka", sans-serif;
 }
 .menu-service-box h4 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Fredoka", sans-serif;
 }
 .menu-service-box h5 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     font-family: "Fredoka", sans-serif;
 }
 .menu-list-td.single-link{
-    padding: 0px 5px;
+    font-family: "Fredoka", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: #F4F4F4;
+    margin-bottom: 5px;
+}
+.submenu-wrapper .menu-list-td.single-link a{
+    margin-bottom: 0px;
 }
 .submenu-wrapper .submenu-wrapper-li{
     margin-bottom: 30px;
@@ -1713,14 +1732,15 @@ form label {
 .submenu-wrapper .submenu-wrapper-li ul li{
     list-style: none;
     margin: 0px 0px 15px;
-    background-color: #f3f3f3;
-    padding: 5px;
+    padding: 10px 15px;
+    background-color: #ECECEC;
 }
 .submenu-wrapper .submenu-wrapper-li ul li:hover{
-    background-color: #ED6436;
+    background-color: #ffffff;
+    color: #000000;
 }
 .submenu-wrapper .submenu-wrapper-li ul li:hover > a{
-    color: #ffffff;
+    color: #000000;
 }
 .submenu-wrapper .submenu-wrapper-li ul ul li > a{
     font-size: 14px;
@@ -1739,40 +1759,36 @@ form label {
 }
 
 .w-30{
-    width: 30% !important;
+    width: 25% !important;
 }
 .w-70{
-    width: 70% !important;
+    width: 75% !important;
 }
 .pet-category-box {
-    background-color: #f2f2f2;
-    margin: 0px 5px;
-    padding: 10px;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 10px 30px;
+    border-right: 1px solid #DDDDDD;
 }
 .menu-list-style {
     position: absolute;
     right: 0px;
     width: auto;
-    background-color: #ddd;
     display: flex;
     top: 0;
-    left: 200px;
-    padding: 10px;
+    left: 250px;
+    padding: 0px;
     justify-content: space-between;
 }
 .menu-list-td a:hover{
     color: #ED6436;
 }
+
 .pet-container{
-    background-color: #9cd1e1;
-}
-.pet-container {
-    background-color: #9cd1e1;
-    padding: 5px 5px 10px;
-    margin: 5px;
+    padding: 0px;
+    margin: 0px;
 }
 .menu-list-col{
-    background-color: #f2f2f2;
     padding: 5px 0px;
 }
 .menu-list-td{
@@ -1799,7 +1815,7 @@ form label {
 }
 
 .submenu-wrapper-li > ul{
-    width: 200px;
+    width: 250px;
 }
 
 .submenu-wrapper-li ul li.sub-three > ul{
@@ -1833,15 +1849,20 @@ form label {
 }
 .pet-container h2{
     font-family: "Fredoka", sans-serif;
-    font-size: 24px;
-    color: #1D256B;
+    font-size: 18px;
+    color: #000000;
     font-weight: 600;
-    padding: 0px 5px;
+    padding: 10px 30px;
+    background-color: #F4F4F4;
+    margin: 0px;
 }
 .submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
+
+    visibility: visible;
+    opacity: 1;
 }
 .submenu-wrapper .submenu-wrapper-li ul li.sub-one:hover .menu-list-style{
     display: flex;
@@ -1886,6 +1907,24 @@ form label {
 }
 .price-style small{
     color: #1D256B;
+}
+.menu-list-td a{
+   position: relative;
+   padding: 0px 10px;
+}
+.menu-list-td a:before{
+    content: "";
+    width: 5px;
+    height: 8px;
+    background-image: url("../images/ar-right.png");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.menu-list-td.single-link a:before{
+    display: none;
 }
 @media only screen and (min-width: 1920px){
 
