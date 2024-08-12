@@ -134,6 +134,9 @@ textarea.form-control.field-style {
 .nav-link:hover{
     background-color: #ECECEC;
 }
+a.nav-link:active {
+    background-color: #ECECEC;
+}
 .book-our-services-link{
     border-left: 1px solid #E4E4E4;
     border-right: 1px solid #E4E4E4;
@@ -1870,7 +1873,7 @@ form label {
 .submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style{
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.3s linear;
 }
 .submenu-wrapper .submenu-wrapper-li ul li.sub-one:hover .menu-list-style{
     display: flex;
