@@ -131,6 +131,9 @@ textarea.form-control.field-style {
     font-family: "Fredoka", sans-serif;
     cursor: pointer;
 }
+.nav-link:hover{
+    background-color: #ECECEC;
+}
 .book-our-services-link{
     border-left: 1px solid #E4E4E4;
     border-right: 1px solid #E4E4E4;
