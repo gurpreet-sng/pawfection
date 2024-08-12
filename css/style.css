@@ -1779,6 +1779,7 @@ form label {
     left: 250px;
     padding: 0px;
     justify-content: space-between;
+    box-shadow: 0px 0px 7px #dfdfdf;
 }
 .menu-list-td a:hover{
     color: #ED6436;
@@ -1789,10 +1790,7 @@ form label {
     margin: 0px;
 }
 .menu-list-col{
-    padding: 5px 0px;
-}
-.menu-list-td{
-
+    padding: 0px 0px;
 }
 .submenu-wrapper-li > ul > li.sub-one > ul{
     display: none;
@@ -1898,6 +1896,21 @@ form label {
 .sub-one{
     cursor: pointer;
 }
+.submenu-wrapper h3{
+    position: relative;
+}
+.submenu-wrapper h3:before{
+    content: "";
+    width: 8px;
+    height: 13px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    background-image: url(../images/chevron-right.png);
+}
+
 .price-style h4{
     font-family: "Fredoka", sans-serif;
     font-size: 24px;
