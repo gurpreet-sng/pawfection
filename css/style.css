@@ -2036,13 +2036,13 @@ form label {
 .submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style{
     visibility: visible;
     opacity: 1;
-}*/
+}
 .nav-item.shop-menu-link .submenu-wrapper .w-30{
     width: auto !important
 }
 .navbar-expand-md .navbar-nav li .submenu-wrapper{
     width: auto;
-}
+}*/
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
