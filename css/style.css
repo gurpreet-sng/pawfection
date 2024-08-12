@@ -1784,10 +1784,13 @@ form label {
     display: flex;
     top: 0;
     left: 250px;
-    padding: 0px;
+    padding: 0px 0px 25px;
     justify-content: space-between;
     box-shadow: 0px 0px 7px #dfdfdf;
     background-color: #ffffff;
+}
+.menu-list-col.w-30 .pet-container h2{
+    margin-right: 2px;
 }
 .menu-list-td a:hover{
     color: #ED6436;
