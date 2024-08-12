@@ -1673,6 +1673,7 @@ form label {
     padding: 0px;
     width: 100%;
     display: none;
+    display: block;
     z-index: 20;
     justify-content: left;
     height: 585px;
@@ -1874,6 +1875,9 @@ form label {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.3s linear;
+
+    visibility: visible;
+    opacity: 1;
 }
 .submenu-wrapper .submenu-wrapper-li ul li.sub-one:hover .menu-list-style{
     display: flex;
@@ -2105,12 +2109,20 @@ form label {
 }
 @media only screen and (max-width:991px){
 
-    .submenu-wrapper-for-mobile{
-        display: block;
-        margin: 0px 15px;
+    .menu-service-box h4 {
+        font-size: 16px;
     }
-    .navbar-expand-md .navbar-nav li .submenu-wrapper{
-        display: none !important;
+    .menu-service-box h5 {
+        font-size: 16px;
+    }
+    .submenu-wrapper-li > ul {
+        width: 200px;
+    }
+    .menu-list-style{
+        left: 200px;
+    }
+    .pet-category-box{
+        padding: 10px;
     }
     .hide-on-mobile{
         display: none;
@@ -2251,17 +2263,25 @@ form label {
         align-items: self-end;
     }
     .navbar-expand-md .navbar-nav li .submenu-wrapper{
-        padding: 20px 10px 0px;
+        padding: 20px 0px 0px;
     }
     .navbar-expand-md .navbar-nav li .submenu-wrapper {
         height: 805px;
     }
+    
 }
 @media only screen and (max-width:767px){
-    
+
     .book-our-services-link {
         border-left: 0px solid #E4E4E4;
         border-right: 0px solid #E4E4E4;
+    }
+    .submenu-wrapper-for-mobile{
+        display: block;
+        margin: 0px 15px;
+    }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        display: none !important;
     }
     .submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style {
         visibility: visible;
