@@ -2025,8 +2025,23 @@ form label {
     margin-bottom: 0px;
     padding: 0px;
 }
+.nav-item.shop-menu-link .menu-list-style{
+    left: 0px;
+    justify-content: flex-start;
+}
+/*
 .nav-item.shop-menu-link .submenu-wrapper{
-    
+    display: block !important;
+}
+.submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style{
+    visibility: visible;
+    opacity: 1;
+}*/
+.nav-item.shop-menu-link .submenu-wrapper .w-30{
+    width: auto !important
+}
+.navbar-expand-md .navbar-nav li .submenu-wrapper{
+    width: auto;
 }
 @media only screen and (min-width: 1920px){
 
