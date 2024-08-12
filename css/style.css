@@ -1952,6 +1952,56 @@ form label {
 .menu-list-td.single-link a:before{
     display: none;
 }
+.submenu-wrapper-for-mobile{
+    display: none;
+}
+.submenu-wrapper-for-mobile .accordion-button{
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.submenu-wrapper-for-mobile a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 14px;
+    font-family: "Fredoka", sans-serif;
+}
+.submenu-wrapper-for-mobile .pet-category-box{
+    padding: 10px 15px;
+}
+.submenu-wrapper-for-mobile .menu-list-td.single-link a{
+    margin: 0px;
+}
+.submenu-wrapper-for-mobile .menu-service-box h5{
+    font-size: 16px;
+}
+.submenu-wrapper-for-mobile .pet-container h2{
+    padding: 10px 20px;
+}
+.submenu-wrapper-for-mobile .menu-list-td.single-link{
+    padding: 10px 15px;
+}
+.submenu-wrapper-for-mobile .pet-container h2{
+    font-size: 16px;
+}
+.submenu-wrapper-for-mobile .rabbit-link{
+    margin-top: 0px;
+}
+.submenu-wrapper-for-mobile .menu-list-col.w-30 .pet-container h2 {
+    margin-right: 0px;
+}
+.submenu-wrapper-for-mobile .menu-service-box h4{
+    font-size: 16px;
+}
+.submenu-wrapper-for-mobile .menu-list-style{
+    padding: 0px;
+}
+.accordion-button:not(.collapsed){
+    background-color: #faf0dd !important;
+}
 @media only screen and (min-width: 1920px){
 
     .container-fluid {
@@ -2054,6 +2104,13 @@ form label {
 }
 @media only screen and (max-width:991px){
 
+    .submenu-wrapper-for-mobile{
+        display: block;
+        margin: 0px 15px;
+    }
+    .navbar-expand-md .navbar-nav li .submenu-wrapper{
+        display: none !important;
+    }
     .hide-on-mobile{
         display: none;
     }
@@ -2243,7 +2300,7 @@ form label {
     }
     
     .navbar-expand-md .navbar-nav li .submenu-wrapper {
-        display: flex;   
+        display: none;   
     }
     .submenu-wrapper-li > ul > li.sub-one > ul{
         display: block;
