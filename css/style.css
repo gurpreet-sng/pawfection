@@ -1999,6 +1999,7 @@ form label {
 .submenu-wrapper-for-mobile .menu-list-style{
     padding: 0px;
 }
+
 .accordion-button:not(.collapsed){
     background-color: #faf0dd !important;
 }
@@ -2257,7 +2258,11 @@ form label {
     }
 }
 @media only screen and (max-width:767px){
-
+    
+    .book-our-services-link {
+        border-left: 0px solid #E4E4E4;
+        border-right: 0px solid #E4E4E4;
+    }
     .submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style {
         visibility: visible;
         opacity: 1;
