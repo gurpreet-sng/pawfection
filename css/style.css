@@ -125,7 +125,7 @@ textarea.form-control.field-style {
     font-style: normal;
     font-weight: 600;
     padding: 15px 15px;
-    color: #000000;
+    color: #000000 !important;
     text-align: center;
     text-transform: capitalize;
     font-family: "Fredoka", sans-serif;
@@ -2028,6 +2028,10 @@ form label {
 .nav-item.shop-menu-link .menu-list-style{
     left: 0px;
     justify-content: flex-start;
+}
+.navbar-expand-md .navbar-nav li.nav-item.shop-menu-link .submenu-wrapper{
+    display: block;
+    left: 15px;
 }
 /*
 .nav-item.shop-menu-link .submenu-wrapper{

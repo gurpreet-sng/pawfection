@@ -7,15 +7,26 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    
         <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
         <link rel="icon" type="image/x-icon" href="images/fav.png">
-        <link rel="stylesheet" href="css/style.css">
+        <link href="css/ma5-menu.min.css" rel="stylesheet" type="text/css">
+        <link href="css/site.min.css" rel="stylesheet" type="text/css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+         <!-- ma5menu -->
+         <script src="js/site.min.js"></script>
+         <script src="js/ma5-menu.min.js"></script>
+         
+         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="white-body">
         <section class="First-fold-section">
@@ -213,124 +224,81 @@
 <!--footer-->
 <div include-html="footer.html"  id="footer-file"></div>
 
-        <footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-                integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-                crossorigin="anonymous"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-            <script src="js/include-html.min.js"></script>
-            <script src="https://md-aqil.github.io/images/swiper.min.js"></script>
-            <script>
-                $(document).ready(function(){
-                    $('.owl-one').owlCarousel({
-                        items:1,
-                        loop:true,
-                        margin:10,
-                        nav:true,
-                        autoplay:false,
-                        autoplayTimeout:2000,
-                        autoplayHoverPause:true
-                    });
-                    
-                    $('.play').on('click',function(){
-                        owl.trigger('play.owl.autoplay',[1000])
-                    })
-                    $('.stop').on('click',function(){
-                        owl.trigger('stop.owl.autoplay')
-                    })
-                
-                  });
-            </script>
+<footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
 
+    <script src="js/include-html.min.js"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.owl-one').owlCarousel({
+                items:1,
+                loop:true,
+                margin:10,
+                nav:true,
+                autoplay:false,
+                autoplayTimeout:2000,
+                autoplayHoverPause:true
+            });
             
+            $('.play').on('click',function(){
+                owl.trigger('play.owl.autoplay',[1000])
+            })
+            $('.stop').on('click',function(){
+                owl.trigger('stop.owl.autoplay')
+            })
+        
+          });
+    </script>
+    <script>
+        (function () {
+            const second = 1000,
+                    minute = second * 60,
+                    hour = minute * 60,
+                    day = hour * 24;
 
-            <script>
-                function grid_view(no){
-                    if(no == 2){
-                        $('.dis-view').removeClass('col-lg-4');
-                        $('.dis-view').removeClass('col-lg-3');
-                        $('.dis-view').addClass('col-lg-6');
-                    } else if(no == 3){
-                        $('.dis-view').removeClass('col-lg-6');
-                        $('.dis-view').removeClass('col-lg-3');
-                        $('.dis-view').addClass('col-lg-4');
-                    } else if(no == 4){
-                        $('.dis-view').removeClass('col-lg-6');
-                        $('.dis-view').removeClass('col-lg-4');
-                        $('.dis-view').addClass('col-lg-3');
-                    } else {
-                        $('.dis-view').removeClass('col-lg-6');
-                        $('.dis-view').removeClass('col-lg-3');
-                        $('.dis-view').addClass('col-lg-4');
-                    }           
-                }
-            </script>
-            <!-- new -->
-        <script>
-            var thumbs = $('.img-selection').find('img');
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "09/30/",
+                birthday = dayMonth + yyyy;
             
-            thumbs.click(function () {
-                var src = $(this).attr('src');
-                var dp = $('.display-img');
-                var img = $('.zoom');
-                dp.attr('src', src);
-                img.attr('src', src);
-            });
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
             
-            $(".img-thumbnail").click(function () {
-                $('.img-thumbnail').removeClass('selected');
-                $(this).addClass('selected');
-            });
-            
-            var zoom = $('.big-img').find('img').attr('src');
-            $('.big-img').append('<img class="zoom" src="' + zoom + '">');
-            $('.big-img').mouseenter(function () {
-                $(this).mousemove(function (event) {
-                    var offset = $(this).offset();
-                    var left = event.pageX - offset.left;
-                    var top = event.pageY - offset.top;
-            
-                    $(this).find('.zoom').css({
-                        width: '200%',
-                        opacity: 1,
-                        left: -left,
-                        top: -top,
-                    });
-                });
-            });
-            
-            $('.big-img').mouseleave(function () {
-                $(this).find('.zoom').css({
-                    width: '100%',
-                    opacity: 0,
-                    left: 0,
-                    top: 0,
-                });
-            });
-        </script>
-        <!-- Quantity -->
-        <script>
-            var buttonPlus = $(".qty-btn-plus");
-            var buttonMinus = $(".qty-btn-minus");
-            
-            var incrementPlus = buttonPlus.click(function () {
-                var $n = $(this)
-                    .parent(".qty-container")
-                    .find(".input-qty");
-                $n.val(Number($n.val()) + 1);
-            });
-            
-            var incrementMinus = buttonMinus.click(function () {
-                var $n = $(this)
-                    .parent(".qty-container")
-                    .find(".input-qty");
-                var amount = Number($n.val());
-                if (amount > 0) {
-                    $n.val(amount - 1);
-                }
-            });
-        </script>
-        </footer>
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function() {    
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                    document.getElementById("headline").innerText = "It's my birthday!";
+                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                    clearInterval(x);
+                    }   
+                    //seconds
+                }, 0)
+            }());
+    </script>
+    
+</footer>
     </body>
 </html>
