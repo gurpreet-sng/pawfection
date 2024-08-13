@@ -2030,23 +2030,12 @@ form label {
     justify-content: flex-start;
 }
 .navbar-expand-md .navbar-nav li.nav-item.shop-menu-link .submenu-wrapper{
-    display: block;
+    /*display: block;*/
     left: 15px;
 }
-/*
-.nav-item.shop-menu-link .submenu-wrapper{
-    display: block !important;
+.margin-zero{
+    margin: 0px !important;
 }
-.submenu-wrapper .submenu-wrapper-li ul li.sub-one .menu-list-style{
-    visibility: visible;
-    opacity: 1;
-}
-.nav-item.shop-menu-link .submenu-wrapper .w-30{
-    width: auto !important
-}
-.navbar-expand-md .navbar-nav li .submenu-wrapper{
-    width: auto;
-}*/
 .ma5menu__panel{
     background-color: #000000;
     scrollbar-color: #636363 #636363;
@@ -2060,7 +2049,7 @@ form label {
 .ma5menu__alert{
     background-image: linear-gradient(to bottom, rgba(14, 101, 182, 0) 0%, #000000 50%);
 }
-.ma5menu__logo {
+.ma5menu__logo{
     background-image: url(../images/logo.png);
     width: 125px;
     height: 35px;
@@ -2329,7 +2318,9 @@ form label {
     .navbar-expand-md .navbar-nav li .submenu-wrapper {
         height: 805px;
     }
-    
+    .pet-container h2{
+        padding: 10px 15px;
+    }
 }
 @media only screen and (max-width:767px){
 
