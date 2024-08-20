@@ -2172,10 +2172,18 @@ form label {
 @media only screen and (max-width:991px){
 
     .menu-service-box h4 {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .submenu-wrapper a{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .pet-container h2{
+        font-size: 14px;
+        line-height: 18px;
     }
     .menu-service-box h5 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .submenu-wrapper-li > ul {
         width: 200px;
