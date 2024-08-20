@@ -1737,7 +1737,7 @@ form label {
     font-size: 18px;
     color: #000000;
     font-weight: 600;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: #F4F4F4;
     margin-bottom: 5px;
 }
@@ -1795,7 +1795,7 @@ form label {
 .pet-category-box {
     background-color: #ffffff;
     margin: 0px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-right: 1px solid #DDDDDD;
 }
 .menu-list-style {
@@ -1882,7 +1882,7 @@ form label {
     font-size: 18px;
     color: #000000;
     font-weight: 600;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: #F4F4F4;
     margin: 0px;
 }
