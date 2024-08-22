@@ -1827,6 +1827,10 @@ li.sub-one ul > li > a{
     box-shadow: 0px 0px 7px #dfdfdf;
     background-color: #ffffff;
 }
+.menu-list-style.nobg{
+    box-shadow: none;
+    background-color: transparent;
+}
 .menu-list-col.w-30 .pet-container h2{
     margin-right: 2px;
 }
