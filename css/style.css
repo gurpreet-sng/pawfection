@@ -1768,6 +1768,7 @@ form label {
     /*margin: 0px 0px 15px;*/
     padding: 10px 15px;
     background-color: #ECECEC;
+    position: relative;
 }
 .submenu-wrapper .submenu-wrapper-li ul li:hover{
     background-color: #ffffff;
@@ -1789,6 +1790,7 @@ form label {
     background-color: #ffffff;
     left: 0;
     width: 220px;
+    top: 0px;
 }
 li.sub-one ul > li:hover{
     background-color:#ED6436 !important;
@@ -1857,7 +1859,7 @@ li.sub-one ul > li > a{
 
 .submenu-wrapper-li ul li.sub-two > ul{
     display: none;
-    left: 200px;
+    left: 220px;
     width: 200px;
 }
 .submenu-wrapper-li ul li.sub-two:hover > ul{
