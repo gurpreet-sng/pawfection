@@ -2362,6 +2362,17 @@ li.sub-one ul > li > a{
     .pet-container h2{
         padding: 10px 15px;
     }
+    .submenu-wrapper-li ul li.sub-two > ul{
+        width: 160px;
+        left: 160px;
+    }
+    .submenu-wrapper-li ul li.sub-three > ul{
+        width: 160px;
+        left: 160px;
+    }
+    .submenu-wrapper-li li.sub-one ul{
+        width: 160px;
+    }
 }
 @media only screen and (max-width:767px){
 
