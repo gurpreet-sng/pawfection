@@ -254,51 +254,71 @@
         
           });
     </script>
-    <!--<script>
-        (function () {
-            const second = 1000,
-                    minute = second * 60,
-                    hour = minute * 60,
-                    day = hour * 24;
+      <!-- new -->
+      <script>
+        var thumbs = $('.img-selection').find('img');
 
-            //I'm adding this section so I don't have to keep updating this pen every year :-)
-            //remove this if you don't need it
-            let today = new Date(),
-                dd = String(today.getDate()).padStart(2, "0"),
-                mm = String(today.getMonth() + 1).padStart(2, "0"),
-                yyyy = today.getFullYear(),
-                nextYear = yyyy + 1,
-                dayMonth = "09/30/",
-                birthday = dayMonth + yyyy;
-            
-            today = mm + "/" + dd + "/" + yyyy;
-            if (today > birthday) {
-                birthday = dayMonth + nextYear;
+        thumbs.click(function () {
+            var src = $(this).attr('src');
+            var dp = $('.display-img');
+            var img = $('.zoom');
+            dp.attr('src', src);
+            img.attr('src', src);
+        });
+
+        $(".img-thumbnail").click(function () {
+            $('.img-thumbnail').removeClass('selected');
+            $(this).addClass('selected');
+        });
+
+        var zoom = $('.big-img').find('img').attr('src');
+        $('.big-img').append('<img class="zoom" src="' + zoom + '">');
+        $('.big-img').mouseenter(function () {
+            $(this).mousemove(function (event) {
+                var offset = $(this).offset();
+                var left = event.pageX - offset.left;
+                var top = event.pageY - offset.top;
+
+                $(this).find('.zoom').css({
+                    width: '200%',
+                    opacity: 1,
+                    left: -left,
+                    top: -top,
+                });
+            });
+        });
+
+        $('.big-img').mouseleave(function () {
+            $(this).find('.zoom').css({
+                width: '100%',
+                opacity: 0,
+                left: 0,
+                top: 0,
+            });
+        });
+    </script>
+    <!-- Quantity -->
+    <script>
+        var buttonPlus = $(".qty-btn-plus");
+        var buttonMinus = $(".qty-btn-minus");
+
+        var incrementPlus = buttonPlus.click(function () {
+            var $n = $(this)
+                .parent(".qty-container")
+                .find(".input-qty");
+            $n.val(Number($n.val()) + 1);
+        });
+
+        var incrementMinus = buttonMinus.click(function () {
+            var $n = $(this)
+                .parent(".qty-container")
+                .find(".input-qty");
+            var amount = Number($n.val());
+            if (amount > 0) {
+                $n.val(amount - 1);
             }
-            //end
-            
-            const countDown = new Date(birthday).getTime(),
-                x = setInterval(function() {    
-
-                    const now = new Date().getTime(),
-                        distance = countDown - now;
-
-                    document.getElementById("days").innerText = Math.floor(distance / (day)),
-                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-                    //do something later when date is reached
-                    if (distance < 0) {
-                    document.getElementById("headline").innerText = "It's my birthday!";
-                    document.getElementById("countdown").style.display = "none";
-                    document.getElementById("content").style.display = "block";
-                    clearInterval(x);
-                    }   
-                    //seconds
-                }, 0)
-            }());
-    </script>-->
+        });
+    </script>
     
 </footer>
     </body>
